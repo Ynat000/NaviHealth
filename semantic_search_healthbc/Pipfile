@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "*"
+bs4 = "*"
+sentence-transformers = "*"
+torch = "*"
+openai = "*"
+flask = "*"
+flask-cors = "*"
+
+[dev-packages]
+black = "*"
+
+[requires]
+python_version = "3.14"
