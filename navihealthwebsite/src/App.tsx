@@ -105,7 +105,7 @@ function App() {
         </button>
         {result && (
           <div style={{ marginTop: '1rem', padding: '1rem', backgroundColor: '#1a1a1a', borderRadius: '4px' }}>
-            <ChatResponse llmResponse={result} />
+            {loading ? '' : <ChatResponse llmResponse={result} />}
           </div>
         )}
       </div>
