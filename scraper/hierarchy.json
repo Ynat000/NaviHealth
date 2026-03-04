@@ -1,0 +1,72 @@
+{
+  "https://www.healthlinkbc.ca/": {
+    "parent": null,
+    "children": [
+      "https://www.healthlinkbc.ca/#main-content",
+      "https://www.healthlinkbc.ca/health-library/public-health-alerts",
+      "https://www.healthlinkbc.ca/living-well",
+      "https://www.healthlinkbc.ca/living-well/getting-older",
+      "https://www.healthlinkbc.ca/living-well/physical-activity",
+      "https://www.healthlinkbc.ca/living-well/food-and-nutrition",
+      "https://www.healthlinkbc.ca/living-well/family-planning-pregnancy-and-childbirth",
+      "https://www.healthlinkbc.ca/living-well/parenting",
+      "https://www.healthlinkbc.ca/health-library"
+    ],
+    "depth": 0,
+    "title": "HealthLink BC - 24/7 Health Advice You Can Trust"
+  },
+  "https://www.healthlinkbc.ca/#main-content": {
+    "parent": "https://www.healthlinkbc.ca/",
+    "children": [],
+    "depth": 1,
+    "title": "HealthLink BC - 24/7 Health Advice You Can Trust"
+  },
+  "https://www.healthlinkbc.ca/health-library/public-health-alerts": {
+    "parent": "https://www.healthlinkbc.ca/",
+    "children": [],
+    "depth": 1,
+    "title": "Public Health Alerts | HealthLink BC"
+  },
+  "https://www.healthlinkbc.ca/living-well": {
+    "parent": "https://www.healthlinkbc.ca/",
+    "children": [],
+    "depth": 1,
+    "title": "Living well | HealthLink BC"
+  },
+  "https://www.healthlinkbc.ca/living-well/getting-older": {
+    "parent": "https://www.healthlinkbc.ca/",
+    "children": [],
+    "depth": 1,
+    "title": "Getting older | HealthLink BC"
+  },
+  "https://www.healthlinkbc.ca/living-well/physical-activity": {
+    "parent": "https://www.healthlinkbc.ca/",
+    "children": [],
+    "depth": 1,
+    "title": "Physical activity | HealthLink BC"
+  },
+  "https://www.healthlinkbc.ca/living-well/food-and-nutrition": {
+    "parent": "https://www.healthlinkbc.ca/",
+    "children": [],
+    "depth": 1,
+    "title": "Food and nutrition | HealthLink BC"
+  },
+  "https://www.healthlinkbc.ca/living-well/family-planning-pregnancy-and-childbirth": {
+    "parent": "https://www.healthlinkbc.ca/",
+    "children": [],
+    "depth": 1,
+    "title": "Family planning, pregnancy and childbirth | HealthLink BC"
+  },
+  "https://www.healthlinkbc.ca/living-well/parenting": {
+    "parent": "https://www.healthlinkbc.ca/",
+    "children": [],
+    "depth": 1,
+    "title": "Parenting | HealthLink BC"
+  },
+  "https://www.healthlinkbc.ca/health-library": {
+    "parent": "https://www.healthlinkbc.ca/",
+    "children": [],
+    "depth": 1,
+    "title": "Health library | HealthLink BC"
+  }
+}

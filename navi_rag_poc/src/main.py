@@ -33,6 +33,7 @@ def semantic_search_wv8(query: str):
             query=query, limit=1, return_metadata=wvc.query.MetadataQuery(distance=True)
         )
 
+        print("semantic search wv8: ", response)
         obj = response.objects[0]
 
         return obj.properties["chunk_file"]
