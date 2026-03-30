@@ -26,22 +26,24 @@ print("  Loading embedding model...")
 Settings.embed_model = HuggingFaceEmbedding(
     model_name="paraphrase-multilingual-MiniLM-L12-v2"
 )
+print("  Embedding model embedded.\n")
 
 print("  Configuring LLM...")
 Settings.llm = Groq(
     model="qwen/qwen3-32b",  # switch models here if needed
     api_key=api_key
 )
+print("  LLM configured.\n")
 
 # load documents
 print("  Loading documents ...")
 documents = SimpleDirectoryReader(DATA_DIR).load_data()
-print(f"  Loaded {len(documents)} documents")
+print(f"  Loaded {len(documents)} documents\n")
 
 # create vector index
 print("  Creating vector index...")
 index = VectorStoreIndex.from_documents(documents)
-print("  Index created.")
+print("  Index created.\n")
 
 # design prompt template
 QA_PROMPT_TMPL = """\
@@ -91,6 +93,8 @@ test_queries = [
     "我胸口很痛，呼吸困难",
     "J'ai un peu de fièvre et je tousse, où dois-je aller?",
     "我不知道应该去哪里，感觉有点不舒服但不严重",
+    "Pergelangan kaki saya terkilir",
+    "Aku tidak bisa berhenti batuk"
 ]
 
 for query in test_queries:
