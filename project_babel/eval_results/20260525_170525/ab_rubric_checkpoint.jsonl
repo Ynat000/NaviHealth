@@ -1,0 +1,1 @@
+{"model": "qwen/qwen3-32b", "label": "Emergency - chest pain", "query": "I have severe chest pain and difficulty breathing, what should I do?", "error": "'RetrieverQueryEngine' object has no attribute '_llm'"}

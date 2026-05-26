@@ -22,11 +22,46 @@ source venv/bin/activate        # macOS/Linux
 # Install dependencies
 pip install -r requirements.txt
 # or: pip install -r requirements-simple.txt if this doesn't work
+pip install gradio python-dotenv
 
 # Set API key - register free account in https://console.groq.com/login and get API key
-$env:GROQ_API_KEY = "<your-API-key>"  # Windows
-export GROQ_API_KEY="<your-API-key>"  # macOS/Linux
+# Create a .env file in the project_babel folder with:
+# GROQ_API_KEY=your-api-key-here
+# PYTHONIOENCODING=utf-8
 ```
+
+## Running the App
+
+Make sure you have a `.env` file set up (see Setup above), then:
+
+```bash
+python app.py
+```
+
+The app will take 1-2 minutes to load and index all documents, then open at `http://127.0.0.1:7860`.
+
+### Sharing the App
+
+The app is configured with `share=True`, so Gradio will also print a public URL like:
+
+```
+https://abc123.gradio.live
+```
+
+You can send this link to anyone — it works as long as your machine is running the app. The link is valid for 72 hours and changes each time you restart the app.
+
+### Deploying for a Permanent URL
+
+To have the app always available without running it on your machine, you need to host it on a server. Options:
+
+| Option | Cost | Difficulty |
+|--------|------|------------|
+| Hugging Face Spaces | Free | Easy — connect GitHub repo, set API key as secret |
+| Render | Free tier | Easy — connect GitHub repo |
+| Railway | ~$5/month | Easy — connect GitHub repo |
+| DigitalOcean / AWS | ~$6+/month | Medium — manage your own server |
+
+For a custom domain (e.g. `navihealth.ca`), you additionally need to buy a domain (~$10-15/year from Namecheap or Google Domains) and point its DNS to your server's IP.
 
 ## Project Structure
 

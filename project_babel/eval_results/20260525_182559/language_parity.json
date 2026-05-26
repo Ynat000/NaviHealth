@@ -1,0 +1,714 @@
+{
+  "metadata": {
+    "timestamp": "20260525_182559",
+    "model": "qwen/qwen3-32b",
+    "scenarios": 5,
+    "languages": [
+      "English",
+      "Chinese",
+      "French",
+      "Indonesian"
+    ]
+  },
+  "results": [
+    {
+      "scenario": "Emergency - chest pain",
+      "languages": {
+        "en": {
+          "query": "I have severe chest pain and difficulty breathing, what should I do?",
+          "answer": "<think>\nOkay, the user is experiencing severe chest pain and difficulty breathing. Let me check the policy documents first to see if there's any relevant information.\n\nLooking at the files provided: the first one is about sulphur dioxide exposure, which mentions symptoms like chest tightness, coughing, wheezing, and shortness of breath. The second file is about maple bark disease, which includes chest tightness as a less common symptom. The third file is on measles, which doesn't seem relevant here.\n\nThe user's symptoms are severe chest pain and difficulty breathing. The sulphur dioxide document mentions that if someone is very sensitive, they may need medical care. However, severe symptoms like these could indicate an emergency. The rules state that in the case of an emergency (like chest pain or difficulty breathing), I must immediately advise calling 911. \n\nEven though the policy documents mention possible respiratory issues from sulphur dioxide or maple bark disease, the user's symptoms are severe and acute. The rules prioritize emergencies, so the correct action is to direct them to call 911 right away. There's no need to refer them to 811 in this case because it's an emergency. I should also mention that if they need further assistance after the emergency, they can contact 811, but the immediate step is 911.\n</think>\n\n**Answer:**  \nYou are experiencing **severe chest pain and difficulty breathing**, which are **emergency symptoms**. According to the rules provided, **immediately call 911** for urgent medical assistance.  \n\nWhile the policy documents discuss respiratory issues related to sulphur dioxide exposure (e.g., airway constriction, shortness of breath) and maple bark disease (e.g., chest tightness), **severe chest pain and breathing difficulties require immediate emergency care**. Do not delay seeking help.  \n\nIf you need further guidance after addressing the emergency, you may contact **811** for healthcare advice.  \n\n**Source:** Emergency response rules in the provided policy framework.",
+          "sources": [
+            "65f_Outdoor_air_quality_Sulphur_dioxide_SO2_2024-12.md",
+            "130d_Maple_bark_disease_2025-10.md",
+            "14b_Measles_2023-12.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 9,
+              "reason": "The response is grounded in the policy framework's emergency rules, even if not directly citing the retrieved documents."
+            },
+            "completeness": {
+              "score": 10,
+              "reason": "The answer fully addresses the user's question by advising immediate emergency action and follow-up options."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "The response correctly identifies severe chest pain and breathing difficulties as emergencies and advises calling 911."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is in English, matching the user's question."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "The guidance aligns with the policy framework's emergency protocol and provides appropriate next steps."
+            },
+            "overall": 9.8
+          }
+        },
+        "zh": {
+          "query": "我胸口很痛，呼吸困难，我应该怎么办？",
+          "answer": "<think>\n好的，用户现在报告说胸口很痛并且有呼吸困难，这需要立即处理。首先，根据规则，如果出现紧急情况，比如胸痛和呼吸困难，应该立即建议拨打911。这两个症状都是典型的紧急情况，可能涉及心脏病或严重的呼吸系统问题，比如心脏病发作或肺栓塞，这些情况需要紧急医疗干预。\n\n接下来，我需要检查提供的政策文档，看看是否有相关信息。在文件中，关于硫氧化物和枫树皮疾病的文档提到了呼吸系统症状，但并没有直接涉及胸痛和呼吸困难的紧急处理。例如，硫氧化物的文档提到呼吸急促和咳嗽，但处理建议主要是避免暴露和寻求医疗帮助。枫树皮疾病则涉及咳嗽和胸闷，但同样没有紧急处理步骤。\n\n用户的问题属于紧急情况，因此根据规则，必须优先建议拨打911。此外，用户可能的情况可能与政策文档中提到的疾病无关，比如心脏问题或其他急性状况，因此需要专业医疗人员立即评估。同时，用户可能没有提供足够的信息来判断是否与已知的健康问题（如哮喘或COPD）有关，但根据症状的严重性，紧急处理是必要的。\n\n此外，用户可能需要进一步的医疗评估，例如心电图或胸部X光检查，以确定胸痛和呼吸困难的原因。在等待急救时，建议用户保持平静，坐下休息，避免任何体力活动，并确保周围环境安全。如果有任何已知的过敏史或慢性疾病，应准备好相关信息供急救人员参考。\n\n总结来说，用户的情况属于紧急情况，必须立即拨打911，并按照急救人员的指示进行操作，同时遵循后续的医疗建议。\n</think>\n\n您出现胸痛和呼吸困难的症状，这属于紧急情况。根据政策文件中的指导原则，此类症状需要立即寻求紧急医疗帮助。\n\n**建议行动：**\n1. **立即拨打911**（加拿大紧急服务电话）以获得专业医疗援助。\n2. 在等待急救时，请保持平静，坐下休息，避免任何体力活动。\n3. 如果可能，请确保周围环境通风良好，并让他人知道您的状况。\n\n**依据说明：**\n- 根据所有政策文件中提到的紧急处理原则，胸痛和呼吸困难属于需要立即就医的紧急症状（例如文件中提到的\"严重出血、胸痛、呼吸困难\"需直接联系911）。\n- 即使症状可能与已知健康问题（如哮喘或枫树皮疾病）相关，急性胸痛和呼吸困难仍需优先排除心脏或呼吸系统急症。\n\n请不要延误急救，您的安全是最重要的。",
+          "sources": [
+            "65f_Outdoor_air_quality_Sulphur_dioxide_SO2_2024-12.md",
+            "14b_Measles_2023-12.md",
+            "130d_Maple_bark_disease_2025-10.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 9,
+              "reason": "The response correctly identifies chest pain and breathing difficulties as emergencies and advises calling 911, aligning with the retrieved documents' emphasis on urgent symptoms like shortness of breath and chest tightness."
+            },
+            "completeness": {
+              "score": 7,
+              "reason": "The answer addresses the immediate emergency but lacks additional context about potential causes (e.g., cardiac vs. respiratory) or post-911 steps mentioned in the documents."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "The response correctly recognizes chest pain and breathing difficulties as life-threatening and explicitly instructs calling 911."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is provided in Chinese, matching the user's question language."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "The guidance to call 911 for acute chest pain and breathing difficulties is appropriate and aligns with standard emergency protocols."
+            },
+            "overall": 9.2
+          }
+        },
+        "fr": {
+          "query": "J'ai de fortes douleurs thoraciques et des difficultés à respirer, que dois-je faire?",
+          "answer": "<think>\nOkay, the user is asking in French about having severe chest pain and difficulty breathing. First, I need to check if this is an emergency. The rules say to immediately advise calling 911 for emergencies like chest pain or difficulty breathing. Let me confirm the symptoms: chest pain and breathing difficulties are both listed as emergencies. So regardless of the policy documents provided, the immediate action is to call 911. The policy documents mention sulphur dioxide and maple bark disease, but those don't seem directly related to the user's current symptoms. The mumps document also isn't relevant here. Since the user's situation is an emergency, I should follow the rules and tell them to call 911 right away. No need to refer to the policy documents for this case because the rules take precedence.\n</think>\n\nVous avez des symptômes d'urgence : des douleurs thoraciques fortes et des difficultés à respirer. **Appelez immédiatement 911** pour obtenir une assistance médicale d'urgence. Ces symptômes nécessitent une évaluation rapide par des professionnels de santé. \n\n*Règle appliquée : En cas d'urgence (comme la douleur thoracique ou les difficultés respiratoires), il est impératif de contacter le 911 immédiatement.*",
+          "sources": [
+            "65f_Outdoor_air_quality_Sulphur_dioxide_SO2_2024-12.md",
+            "130d_Maple_bark_disease_2025-10.md",
+            "14c_Mumps_2022-08.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 10,
+              "reason": "The response correctly identifies chest pain and breathing difficulties as emergencies and advises calling 911, aligning with standard triage protocols despite the retrieved documents not directly addressing these symptoms."
+            },
+            "completeness": {
+              "score": 10,
+              "reason": "The response fully addresses the user's question by prioritizing immediate emergency action (calling 911) without unnecessary elaboration."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "The response correctly detects chest pain and difficulty breathing as life-threatening emergencies and advises immediate 911 contact."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is provided in French, matching the user's question language."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "The response provides accurate, life-saving guidance for a critical situation, adhering to emergency triage protocols."
+            },
+            "overall": 10.0
+          }
+        },
+        "id": {
+          "query": "Saya mengalami nyeri dada yang parah dan kesulitan bernapas, apa yang harus saya lakukan?",
+          "answer": "<think>\nOkay, the user is experiencing severe chest pain and difficulty breathing. Let me check the policy documents first to see if there's any relevant information.\n\nLooking at the files provided: the first one is about sulphur dioxide, which mentions symptoms like chest tightness, coughing, wheezing, and shortness of breath. It advises seeking medical care if very sensitive. The second file is about maple bark disease, which includes shortness of breath and coughing as symptoms, and recommends consulting a healthcare professional if symptoms persist. The third file is on measles, which doesn't seem directly related to chest pain or breathing difficulty except in the context of possible complications, but the main symptoms there are fever, rash, etc.\n\nThe user's symptoms—severe chest pain and difficulty breathing—are more acute and could indicate a serious condition like a heart attack, pulmonary embolism, or severe asthma attack. The rules state that in the case of an emergency (like chest pain, difficulty breathing, severe bleeding), I must immediately advise calling 911. \n\nSince the policy documents don't specifically address these symptoms as an emergency requiring immediate action beyond general advice (like seeking medical care for sulphur dioxide exposure), but the rules have a clear directive for emergencies, I need to follow the rules. The user's situation is an emergency, so the correct action is to tell them to call 911 right away. There's no need to refer to the policy documents further because the rules override the documents in this case.\n</think>\n\nSaya sangat menyarankan Anda untuk segera memanggil 911 karena nyeri dada yang parah dan kesulitan bernapas termasuk kondisi darurat medis yang memerlukan pertolongan segera. \n\nBerdasarkan pedoman darurat kesehatan, kondisi seperti nyeri dada dan kesulitan bernapas dapat menunjukkan masalah serius seperti serangan jantung, emboli paru, atau kondisi lain yang mengancam nyawa. Tidak ada informasi dalam dokumen kebijakan yang menyatakan bahwa gejala ini dapat ditangani tanpa intervensi darurat. \n\nHarap segera mencari pertolongan darurat.",
+          "sources": [
+            "65f_Outdoor_air_quality_Sulphur_dioxide_SO2_2024-12.md",
+            "130d_Maple_bark_disease_2025-10.md",
+            "14b_Measles_2023-12.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 7,
+              "reason": "The response correctly identifies the emergency but does not directly reference the retrieved documents, which focus on non-emergency respiratory symptoms."
+            },
+            "completeness": {
+              "score": 7,
+              "reason": "The response addresses the critical need for emergency care but lacks additional context from the documents about environmental triggers or long-term risks."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "The response correctly advises calling 911 for severe chest pain and breathing difficulty, which are clear emergency indicators."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is provided in Indonesian, matching the user's language and ensuring accessibility."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "The guidance aligns with standard emergency protocols for life-threatening symptoms, prioritizing immediate medical intervention."
+            },
+            "overall": 8.4
+          }
+        }
+      }
+    },
+    {
+      "scenario": "Fever in child",
+      "languages": {
+        "en": {
+          "query": "My child has a high fever, what should I do?",
+          "answer": "<think>\nOkay, the user is asking what to do if their child has a high fever. Let me check the provided policy documents for relevant information.\n\nLooking at the first file about Roseola (file 83), it mentions that if the temperature is high, acetaminophen or ibuprofen can be given. It also warns against ASA for those under 18 due to Reye syndrome. The same advice about medications is repeated in file 13 regarding the Polio vaccine. \n\nSo, the key points are: use acetaminophen or ibuprofen for fever, avoid aspirin in children, and check if the child is under 6 months for ibuprofen. There's no mention of other specific actions beyond medication and rest in the provided documents. Since the user didn't mention other symptoms like difficulty breathing or severe bleeding, it's not an emergency. However, if the fever persists or they're unsure, they should contact 811. I need to make sure to reference the correct files, which are 83 and 13 here.\n</think>\n\nIf your child has a high fever, you can give them **acetaminophen (e.g., Tylenol®)** or **ibuprofen* (e.g., Advil®)** to reduce the fever or relieve soreness. **Do not give ASA (e.g., Aspirin®) to anyone under 18 years of age** due to the risk of Reye syndrome (see [HealthLinkBC File #84](/node/11526)). \n\n*Ibuprofen should not be given to children under 6 months of age without first consulting a healthcare provider.*  \n\nEnsure your child rests and stays hydrated. If the fever persists, worsens, or is accompanied by other concerning symptoms (e.g., difficulty breathing, severe lethargy), contact **811** for further guidance.  \n\n**Basis:**  \n- [HealthLinkBC File #83: Roseola](/node/11526)  \n- [HealthLinkBC File #13: Polio Vaccine (IPV)](/node/11526)  \n\nFor emergencies (e.g., severe bleeding, chest pain, difficulty breathing), call **911** immediately.",
+          "sources": [
+            "83_Roseola_2026-03.md",
+            "15b_Diphtheria_tetanus_pertussis_polio_Haemophilus_influenzae_type_b_DTaP-IPV-Hib_vaccine_2025-12.md",
+            "13_Polio_vaccine_IPV_2026-04.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 10,
+              "reason": "The response directly references the retrieved documents (e.g., Reye syndrome warning, ibuprofen age restriction)."
+            },
+            "completeness": {
+              "score": 9,
+              "reason": "Covers medication options, warnings, and when to seek help, but lacks explicit mention of hydration or monitoring for other symptoms like rash."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "Correctly advises calling 911 for emergencies (e.g., severe bleeding, chest pain) and 811 for non-emergencies."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is in English, matching the user's question and retrieved documents."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "Provides accurate guidance on medication, age restrictions, and escalation paths (811/911) as per the documents."
+            },
+            "overall": 9.8
+          }
+        },
+        "zh": {
+          "query": "我的孩子发烧了，我应该怎么办？",
+          "answer": "<think>\n好的，用户问孩子发烧了该怎么办。首先，我需要查看提供的政策文件，看看有没有相关的处理建议。\n\n在第一个文件（Roseola）中提到，如果孩子体温高，可以给 acetaminophen 或 ibuprofen，但ASA（阿司匹林）不能给18岁以下的人使用，因为有Reye综合征的风险。同时，ibuprofen不建议给6个月以下的婴儿，需要先咨询医生。这可能适用于用户的情况，因为发烧是常见症状。\n\n第三个文件（Rubella）也有类似的建议，处理发烧时使用acetaminophen或ibuprofen，同样提到ASA的禁忌。此外，建议多喝水、休息。这些信息可以结合起来使用。\n\n用户的问题是关于发烧的一般处理，而Roseola和Rubella的文件都提到了类似的处理方法。所以应该推荐使用对乙酰氨基酚或布洛芬，并注意年龄限制。同时提醒不要用阿司匹林，以及保持水分和休息。如果有其他症状或不确定的情况，建议联系811或紧急情况打911。\n\n需要确认用户的孩子年龄，如果小于6个月，使用ibuprofen前要咨询医生。如果没有提到其他紧急症状，就按常规处理建议回答。确保没有遗漏其他政策中的重要信息，比如是否需要就医等。综合所有信息后，给出明确的步骤和注意事项。\n</think>\n\n根据提供的政策文件，以下是针对儿童发烧的建议：\n\n1. **药物选择**：\n   - 可使用**对乙酰氨基酚**（如泰诺®）或**布洛芬**（如Advil®）缓解发烧或不适。\n   - **禁止给18岁以下儿童使用阿司匹林**（如Aspirin®），因其可能引发**瑞氏综合征**（Reye Syndrome）（见文件83和14d）。\n   - **6个月以下婴儿使用布洛芬前**，需先咨询医疗专业人员（文件83）。\n\n2. **其他护理措施**：\n   - 确保孩子**多饮水**（水、果汁、汤），防止脱水（文件14d）。\n   - **充分休息**，直至体温恢复正常（文件83）。\n\n3. **何时寻求紧急帮助**：\n   - 若出现**胸痛、呼吸困难、严重出血**等紧急情况，请立即拨打**911**。\n   - 若不确定病情严重程度或症状持续，请拨打**811**咨询医疗建议。\n\n**依据**：HealthLinkBC文件83（Roseola）和14d（Rubella）中的用药及护理指导。",
+          "sources": [
+            "83_Roseola_2026-03.md",
+            "15b_Diphtheria_tetanus_pertussis_polio_Haemophilus_influenzae_type_b_DTaP-IPV-Hib_vaccine_2025-12.md",
+            "14d_Rubella_2021-11.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 10,
+              "reason": "The response accurately reflects the medication guidelines and age restrictions from the retrieved documents."
+            },
+            "completeness": {
+              "score": 8,
+              "reason": "Covers key points (medications, age restrictions) but lacks explicit mention of hydration/rest details from the documents."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "Correctly avoids advising 911 for non-emergent fever management as per the question's context."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is in Chinese, matching the user's question language."
+            },
+            "triage_accuracy": {
+              "score": 9,
+              "reason": "Provides accurate medication guidance and age-specific warnings, but could explicitly mention 811 for non-emergent follow-up."
+            },
+            "overall": 9.4
+          }
+        },
+        "fr": {
+          "query": "Mon enfant a une forte fièvre, que dois-je faire?",
+          "answer": "<think>\nOkay, the user is asking what to do if their child has a high fever. Let me check the provided policy documents for guidance.\n\nLooking at the Roseola document (file 83), it mentions that if the temperature is high, acetaminophen or ibuprofen can be given. It also warns against ASA for those under 18 due to Reye syndrome. The same advice is in the Rubella document (file 14d). Both mention acetaminophen or ibuprofen for fever, and the aspirin warning. \n\nI need to make sure about the age for ibuprofen. The Roseola file says ibuprofen shouldn't be given to children under 6 months without consulting a healthcare provider. So I should include that caveat.\n\nNo emergency symptoms are mentioned here, just a high fever. The user didn't mention other emergencies like difficulty breathing, so no need to advise 911. But if the fever is part of an emergency, they should call 911. But the question is straightforward about high fever.\n\nThe answer should recommend acetaminophen or ibuprofen as per the guidelines, mention the age restriction for ibuprofen, and the aspirin warning. Also, suggest resting and fluids. Since it's a high fever, maybe also mention when to seek help, but the policy documents don't specify that. The user might need to call 811 if unsure. \n\nSo putting it all together: Advise rest, fluids, use of acetaminophen or ibuprofen with the age note for ibuprofen, avoid aspirin, and suggest calling 811 if unsure. No emergency here, so no 911 unless other symptoms.\n</think>\n\nSi votre enfant a une forte fièvre, voici les mesures à prendre :  \n1. **Administrez de l'acétaminophène (ex. Tylenol®) ou de l'ibuprofène* (ex. Advil®)** pour réduire la fièvre ou les douleurs.  \n   - *L'ibuprofène ne doit pas être donné aux enfants de moins de 6 mois sans consulter un professionnel de la santé.*  \n2. **Évitez l'aspirine (ASA)** chez les personnes de moins de 18 ans en raison du risque de syndrome de Reye.  \n3. **Faites reposer l’enfant** et assurez-vous qu’il boive suffisamment de liquides (eau, jus, soupe).  \n\nSi la fièvre persiste ou si vous avez des préoccupations supplémentaires, **appelez 811** pour obtenir des conseils médicaux.  \n\n*Basis :*  \n- Document 83 (Roseola) et 14d (Rubéole) recommandent l’acétaminophène ou l’ibuprofène pour la fièvre, avec des avertissements sur l’aspirine et l’ibuprofène chez les jeunes enfants.  \n- Aucune urgence signalée dans la question ; si des symptômes d’urgence (ex. difficulté à respirer) surviennent, appelez 911.",
+          "sources": [
+            "83_Roseola_2026-03.md",
+            "15b_Diphtheria_tetanus_pertussis_polio_Haemophilus_influenzae_type_b_DTaP-IPV-Hib_vaccine_2025-12.md",
+            "14d_Rubella_2021-11.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 10,
+              "reason": "The response accurately reflects the retrieved documents, including medication guidelines and warnings about Reye syndrome."
+            },
+            "completeness": {
+              "score": 9,
+              "reason": "The answer addresses key steps for managing fever but could explicitly mention when to seek urgent care (e.g., high fever in infants)."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "No emergency symptoms were reported, so advising 911 was unnecessary; the response correctly avoids it."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is in French, matching the user's question language."
+            },
+            "triage_accuracy": {
+              "score": 9,
+              "reason": "Provides correct medication guidance and 811 referral but lacks specific thresholds for emergency care (e.g., fever in infants <3 months)."
+            },
+            "overall": 9.6
+          }
+        },
+        "id": {
+          "query": "Anak saya demam tinggi, apa yang harus saya lakukan?",
+          "answer": "<think>\nOkay, the user is asking in Indonesian: \"Anak saya demam tinggi, apa yang harus saya lakukan?\" which translates to \"My child has a high fever, what should I do?\" \n\nFirst, I need to check the provided policy documents for guidance on handling a child's high fever. Let me look through each file.\n\nLooking at the first file (Roseola), it mentions that if the temperature is high, acetaminophen or ibuprofen can be given. It also warns against ASA (aspirin) for those under 18 due to Reye syndrome. The same advice is present in the Rubella document (14d). Both mention acetaminophen or ibuprofen for fever, and the aspirin warning.\n\nThe other file (15b) is about vaccines and doesn't directly address fever treatment. So the relevant info is in 83 and 14d.\n\nThe user needs to know to use acetaminophen or ibuprofen, avoid aspirin, and maybe rest and fluids. Also, check if there are any age restrictions. The policy says ibuprofen shouldn't be given to children under 6 months without a healthcare provider's advice.\n\nSince the user didn't specify the child's age, I should mention the general recommendation and note the age restriction for ibuprofen. Also, if the fever persists or is severe, they should consult a healthcare provider or call 811. No emergency symptoms mentioned, so no need to suggest 911 unless there are other symptoms like difficulty breathing, which the user didn't mention.\n\nSo the answer should recommend acetaminophen or ibuprofen (with age note), avoid aspirin, rest, fluids, and advise calling 811 if unsure or if the fever doesn't go down.\n</think>\n\nJika anak Anda demam tinggi, berikut langkah yang dapat diambil berdasarkan pedoman kesehatan:\n\n1. **Berikan obat penurun demam**:  \n   - **Parasetamol (misalnya Tylenol®)** atau **ibuprofen (misalnya Advil®)** dapat diberikan untuk mengurangi demam atau nyeri.  \n   - **Jangan berikan asetilsalisilat (misalnya Aspirin®)** kepada anak di bawah 18 tahun karena risiko sindrom Reye.  \n\n2. **Perhatikan usia anak**:  \n   - **Ibuprofen tidak boleh diberikan kepada bayi di bawah 6 bulan** tanpa terlebih dahulu berkonsultasi dengan tenaga kesehatan.  \n\n3. **Dukung pemulihan**:  \n   - Pastikan anak cukup beristirahat dan minum cairan (air, jus, sup) untuk mencegah dehidrasi.  \n\n4. **Kapan harus mencari bantuan**:  \n   - Jika demam tidak membaik, disertai gejala lain (misalnya kesulitan bernapas, kejang, atau tampak sangat lemah), segera hubungi layanan kesehatan.  \n\n**Dasar rekomendasi**: Pedoman ini sesuai dengan dokumen kesehatan British Columbia (HealthLinkBC File #83 Roseola dan #14d Rubella). Jika Anda tidak yakin atau kondisi anak memburuk, segera hubungi **811** untuk konsultasi lebih lanjut.  \n\n*Catatan: Jika ada gejala darurat (misalnya nyeri dada, sesak napas, pendarahan berat), segera panggil **911**.*",
+          "sources": [
+            "83_Roseola_2026-03.md",
+            "15b_Diphtheria_tetanus_pertussis_polio_Haemophilus_influenzae_type_b_DTaP-IPV-Hib_vaccine_2025-12.md",
+            "14d_Rubella_2021-11.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 10,
+              "reason": "The response accurately reflects the retrieved documents' guidance on acetaminophen/ibuprofen, aspirin avoidance, and age restrictions for ibuprofen."
+            },
+            "completeness": {
+              "score": 10,
+              "reason": "The answer addresses all aspects of the question: medication options, age-specific precautions, hydration/rest, and when to seek help."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "The response correctly avoids advising 911 unless emergency symptoms are present, which were not mentioned in the query."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is provided in Indonesian, matching the user's language and cultural context."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "The guidance aligns with HealthLinkBC protocols, including 811 referral for uncertainty and clear medication instructions."
+            },
+            "overall": 10.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "Head injury",
+      "languages": {
+        "en": {
+          "query": "My child fell and hit their head, what should I do?",
+          "answer": "<think>\nOkay, the user is asking what to do if their child fell and hit their head. Let me check the provided policy documents to see if there's relevant information.\n\nLooking through the documents, the main topic is about shaken baby syndrome and traumatic head injuries due to child maltreatment. The documents mention signs to look for after a head injury, like red flag signs requiring immediate medical help. The red flags include seizures, loss of consciousness, difficulty breathing, inability to make sounds, and trouble sucking or swallowing. There are also non-specific signs like bruising, vomiting, or extreme fussiness.\n\nThe user's situation is a fall causing a head injury, not shaking, but the guidelines on signs to watch for might still apply. The documents don't specifically address falls, but the advice on red flags and when to seek help is relevant. The policy documents recommend calling 911 if red flags are present. If there are no red flags but some non-specific signs, they suggest following up with a healthcare provider. Since the user's question isn't covered directly by the documents, but there's guidance on when to seek medical help after a head injury, I should base the answer on that. Also, if unsure, the documents advise calling 811. Since this is a head injury from a fall, and the documents don't have specific steps beyond the signs, the best course is to check for red flags and recommend emergency care if present, otherwise suggest monitoring and calling 811 if concerned.\n</think>\n\nIf your child fell and hit their head, follow these steps based on the signs and symptoms they exhibit:\n\n### **Immediate Red Flag Signs (Seek Emergency Help):**  \nCall **911** or go to the emergency department **immediately** if your child shows any of these:  \n- **Seizures**  \n- **Loss of consciousness** (even briefly)  \n- **Difficulty breathing** or turning blue  \n- **Unable to make sounds** or follow movement  \n- **Unable to suck or swallow**  \n\nThese are critical signs of potential traumatic head injury and require urgent medical attention.  \n\n---\n\n### **Other Concerning Signs (Follow Up with a Healthcare Provider):**  \nIf your child shows **multiple non-specific signs**, contact your doctor, health clinic, or call **811** for advice. These include:  \n- Bruising on the face, neck, or torso  \n- Vomiting  \n- Extreme fussiness or irritability  \n- Poor muscle tone or lethargy  \n- Dilated or unequal pupils  \n\n---\n\n### **What to Do If No Red Flags Are Present:**  \n1. **Monitor closely** for changes in behavior, appetite, or alertness.  \n2. **Avoid shaking or jostling** the child further.  \n3. **Do not delay seeking help** if symptoms develop later.  \n\nIf you are unsure or concerned, call **811** to speak with a registered nurse for guidance.  \n\n**Basis:** Recommendations are based on HealthLink BC File #86 on traumatic head injury due to child maltreatment, which outlines red flag signs and non-specific indicators requiring medical evaluation.",
+          "sources": [
+            "86_Traumatic_head_injury_due_to_child_maltreatment_Shaken_baby_syndrome_2025-07.md",
+            "86_Traumatic_head_injury_due_to_child_maltreatment_Shaken_baby_syndrome_2025-07.md",
+            "86_Traumatic_head_injury_due_to_child_maltreatment_Shaken_baby_syndrome_2025-07.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 9,
+              "reason": "The response accurately reflects the red flag signs and non-specific indicators from the document, though it slightly extrapolates to falls not explicitly mentioned."
+            },
+            "completeness": {
+              "score": 10,
+              "reason": "The answer addresses all critical aspects: red flags, non-specific signs, monitoring steps, and follow-up actions."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "Clearly advises calling 911 for red flags (e.g., seizures, loss of consciousness) and 811 for non-urgent concerns."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is in English, matching the user's question and document language."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "Provides precise triage guidance aligned with the document's recommendations for head injury evaluation."
+            },
+            "overall": 9.8
+          }
+        },
+        "zh": {
+          "query": "我的孩子摔倒撞到了头，我应该怎么办？",
+          "answer": "<think>\nOkay, the user is asking what to do if their child fell and hit their head. Let me check the provided policy documents.\n\nFirst, the documents are about traumatic head injury due to child maltreatment, specifically shaken baby syndrome. They mention signs to look for, like red flags requiring immediate medical help. The red flags include seizures, loss of consciousness, difficulty breathing, etc. \n\nThe user's situation is a fall causing a head injury, not shaking. The policy documents don't directly address falls, but they do outline red flags for head injuries. I should check if any of those apply here. The user needs to look for those red flags. If present, call 911. If not, but there are non-specific signs like vomiting or extreme fussiness, they should contact a healthcare provider.\n\nAlso, the documents emphasize not to shake the baby, but the user's question is about a fall. Since the policy doesn't cover falls specifically, maybe I should advise based on the red flags provided. If unsure, recommend calling 811 for consultation. Also, mention that if there's an emergency (like loss of consciousness), call 911 immediately.\n\nWait, the user's question is in Chinese. I need to respond in Chinese. Let me make sure the translation of the advice is accurate. Also, ensure that the sources are cited correctly, like the HealthLink BC File number 86. Need to mention the red flags and non-specific signs from the document. If any red flags are present, call 911. Otherwise, contact 811. Also, remind about the non-specific signs and when to follow up with a healthcare provider.\n</think>\n\n如果您孩子摔倒撞到头部，应立即观察以下**红色预警信号**（Red flag signs）：  \n- 癫痫发作  \n- 意识丧失  \n- 呼吸困难或皮肤发紫  \n- 无法发出声音或追踪物体  \n- 无法吸吮或吞咽  \n\n**若出现上述任何症状，请立即拨打 911 或前往急诊科**（依据HealthLink BC 文件86）。  \n\n若未出现红色预警信号，但存在以下**非特异性症状**（如多个症状同时出现）：  \n- 面部、颈部或躯干淤青  \n- 吸吮或吞咽困难、食欲下降  \n- 不再微笑或发声  \n- 嗜睡或意识模糊  \n- 肌张力低下  \n- 瞳孔扩大或大小不一  \n- 呕吐  \n- 极度烦躁或易怒  \n\n请**联系医疗专业人员**（如拨打811咨询）。  \n\n**注意事项**：  \n1. 若孩子无明显异常，但仍担心，可致电[HealthLink BC](tel:811)（811）获取专业建议。  \n2. **切勿因孩子哭闹而摇晃婴儿**，摇晃可能导致不可逆的脑损伤（HealthLink BC 文件86）。  \n\n（依据British Columbia健康政策文件86：创伤性头部损伤与儿童虐待相关的信息）",
+          "sources": [
+            "86_Traumatic_head_injury_due_to_child_maltreatment_Shaken_baby_syndrome_2025-07.md",
+            "86_Traumatic_head_injury_due_to_child_maltreatment_Shaken_baby_syndrome_2025-07.md",
+            "86_Traumatic_head_injury_due_to_child_maltreatment_Shaken_baby_syndrome_2025-07.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 10,
+              "reason": "The response is fully grounded in the retrieved document's red flags and non-specific signs for head injuries."
+            },
+            "completeness": {
+              "score": 10,
+              "reason": "The answer addresses both emergency (911) and non-emergency (811) scenarios, plus preventive advice against shaking infants."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "Correctly advises calling 911 for red flags like seizures or unconsciousness, which aligns with the document's guidance."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is in Chinese, matching the user's question language."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "Provides accurate triage steps: 911 for red flags, 811 for non-specific symptoms, and HealthLink BC consultation."
+            },
+            "overall": 10.0
+          }
+        },
+        "fr": {
+          "query": "Mon enfant est tombé et s'est cogné la tête, que dois-je faire?",
+          "answer": "<think>\nOkay, the user is asking what to do if their child fell and hit their head. Let me check the provided policy documents.\n\nFirst, the documents are about traumatic head injury due to child maltreatment, specifically shaken baby syndrome. They mention signs to look for, like red flags requiring immediate medical help. The red flags include seizures, loss of consciousness, difficulty breathing, etc. \n\nThe user's situation is a fall causing a head injury, not shaking. The policy documents don't cover accidental falls directly, but the general advice on head injuries might apply. The red flags listed are critical signs that need emergency care. \n\nI should check if the documents mention anything about falls. Looking through the content, there's a mention of \"impact to the head\" in the context of shaking, but not specifically about falls. The signs to look for after a head injury would be similar regardless of the cause. \n\nThe user needs to know if their child shows any red flags like loss of consciousness or vomiting, they should call 911. If there are non-specific signs, they should follow up with a healthcare provider. \n\nSince the documents don't specifically address falls, but the general triage advice is there, I can use that. Also, the user might need to call 811 for consultation if unsure. Since this is a head injury from a fall, and the policy documents focus on maltreatment, it's safer to advise seeking medical help if there are concerning symptoms. \n\nI need to make sure not to hallucinate any info not in the documents. The answer should direct them to check for red flags, and if present, call 911. Otherwise, contact 811 for advice. The documents mention calling 811 for non-emergent concerns, so that's the next step.\n</think>\n\nSi votre enfant est tombé et s'est cogné la tête, surveillez les signes d'alerte suivants (selon les directives du document sur les lésions crâniennes traumatiques) :  \n- **Signes rouges** (appel immédiat à **911** ou direction aux urgences) :  \n  - Convulsions  \n  - Perte de conscience  \n  - Difficulté à respirer ou cyanose (teinte bleue)  \n  - Incapacité à produire des sons ou à suivre des mouvements  \n  - Incapacité à sucer ou avaler  \n\n- **Signes non spécifiques** (consultez un professionnel de santé si plusieurs signes sont présents) :  \n  - Ecchymoses sur le visage, le cou ou le tronc  \n  - Trouble de la succion ou de l'appétit  \n  - Perte de sourire ou de vocalisation  \n  - Léthargie (faible niveau de conscience)  \n  - Faible tonus musculaire  \n  - Pupilles dilatées ou de tailles différentes  \n  - Vomissements  \n  - Irritabilité extrême ou caprice inhabituel  \n\nSi vous observez des signes rouges, **appelez immédiatement 911**.  \nSi vous avez des inquiétudes mais que les signes sont non spécifiques, **appelez 811** pour obtenir des conseils d'un infirmier ou d'un professionnel de santé.  \n\n**Note** : Les documents fournis ne traitent pas spécifiquement des chutes, mais les recommandations générales pour les lésions crâniennes s'appliquent. Si vous avez des doutes, consultez un professionnel via **811**.",
+          "sources": [
+            "86_Traumatic_head_injury_due_to_child_maltreatment_Shaken_baby_syndrome_2025-07.md",
+            "86_Traumatic_head_injury_due_to_child_maltreatment_Shaken_baby_syndrome_2025-07.md",
+            "86_Traumatic_head_injury_due_to_child_maltreatment_Shaken_baby_syndrome_2025-07.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 9,
+              "reason": "The response accurately reflects the red flags and triage guidance from the retrieved document on traumatic head injury, though it adds a note about the document not addressing falls specifically."
+            },
+            "completeness": {
+              "score": 10,
+              "reason": "The answer addresses both emergency (911) and non-emergency (811) scenarios with clear, actionable steps based on the document's criteria."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "The response correctly identifies red flags requiring immediate 911 intervention as outlined in the document."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is provided in French, matching the language of the user's question."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "The guidance aligns with the document's triage protocol, directing users to 911 for red flags and 811 for non-specific signs."
+            },
+            "overall": 9.8
+          }
+        },
+        "id": {
+          "query": "Anak saya jatuh dan kepalanya terbentur, apa yang harus saya lakukan?",
+          "answer": "<think>\nOkay, the user is asking what to do if their child fell and hit their head. Let me check the provided policy documents for guidance.\n\nFirst, looking at the documents related to traumatic head injury due to child maltreatment (file 86) and safer sleeping for babies (file 107). The main concern here is head injury, so file 86 is more relevant.\n\nIn file 86, under \"Signs to look for,\" there are red flag signs that require immediate medical help. These include seizures, loss of consciousness, difficulty breathing, inability to make sounds, and others. The user needs to check if their child shows any of these symptoms.\n\nThe document also mentions non-specific signs like bruising, trouble sucking, vomiting, etc. If multiple non-specific signs are present, they should follow up with a healthcare provider.\n\nThe instructions say to call 911 if there are red flags. If unsure, they should call 811 for advice. Since the user's question is about a fall leading to a head injury, I need to guide them based on the symptoms observed.\n\nThe user might not have mentioned specific symptoms yet, so the answer should cover both scenarios: if there are red flags (call 911) or if there are other signs (call 811). Also, emphasize not to shake the baby, but in this case, the injury was from a fall, so focus on the signs to watch for.\n\nI should structure the answer to first check for red flags, then non-specific signs, and provide the appropriate contact numbers. Also, mention the resources like HealthLinkBC for further help. Make sure to base the answer strictly on the provided documents without adding any external information.\n</think>\n\nJika anak Anda jatuh dan kepalanya terbentur, segera perhatikan tanda-tanda berikut:  \n\n**Tanda darurat (segera hubungi 911 atau ke unit gawat darurat):**  \n- Kejang  \n- Kehilangan kesadaran  \n- Kesulitan bernapas atau berubah warna biru  \n- Tidak bisa mengeluarkan suara atau mengikuti gerakan  \n- Tidak bisa mengisap atau menelan  \n\n**Tanda lain yang perlu diwaspadai:**  \n- Memar di wajah, leher, atau dada  \n- Kesulitan mengisap/menelan atau menurunnya nafsu makan  \n- Kehilangan senyum atau respons suara  \n- Kesadaran menurun/mengantuk berlebihan  \n- Kekurangan tonus otot  \n- Pupil mata melebar atau berbeda ukuran  \n- Muntah  \n- Sangat rewel atau mudah marah  \n\nJika anak menunjukkan **tanda darurat**, segera hubungi **911**. Jika ada beberapa tanda non-spesifik (tanpa tanda darurat), segera konsultasi dengan penyedia layanan kesehatan. Jika Anda tidak yakin, hubungi **HealthLinkBC di 811** untuk saran lebih lanjut.  \n\nSumber: [HealthLinkBC File #86](https://www.healthlinkbc.ca/node/11380) tentang cedera kepala akibat kekerasan pada anak.",
+          "sources": [
+            "86_Traumatic_head_injury_due_to_child_maltreatment_Shaken_baby_syndrome_2025-07.md",
+            "86_Traumatic_head_injury_due_to_child_maltreatment_Shaken_baby_syndrome_2025-07.md",
+            "107_Safer_sleeping_for_babies_2025-10.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 9,
+              "reason": "The response is grounded in the retrieved document (File #86) and accurately lists red flags and non-specific signs for traumatic head injury in children."
+            },
+            "completeness": {
+              "score": 10,
+              "reason": "The answer addresses all critical aspects of the question, including red flags for emergency care, non-specific signs for follow-up, and appropriate contact numbers (911/811)."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "The response explicitly advises calling 911 for red flags (e.g., seizures, unconsciousness) and 811 for non-specific signs, aligning with triage protocols."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is provided in Indonesian, matching the user's question language."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "The guidance aligns with the document's instructions: urgent care for red flags, follow-up for non-specific signs, and HealthLinkBC as a resource."
+            },
+            "overall": 9.8
+          }
+        }
+      }
+    },
+    {
+      "scenario": "Flu vaccine",
+      "languages": {
+        "en": {
+          "query": "Why should seniors get the flu vaccine?",
+          "answer": "<think>\nOkay, the user is asking why seniors should get the flu vaccine. Let me check the provided policy documents to find the relevant information.\n\nLooking at the file 12a, which is about why seniors should get the inactivated influenza vaccine, there's a section that explains the importance. It says that seniors aged 65 and older are at higher risk for severe disease and complications from the flu. The vaccine is recommended each year because it's a safe and effective way to prevent illness and save lives. Also, the vaccine is available at no charge, which is a practical reason. The document mentions that the vaccine contains killed viruses, so it can't cause the flu, and common reactions are mild. \n\nAnother point from the same file is that getting vaccinated before the flu season starts, which in BC is usually October, helps build immunity in time. The vaccine protects not only the seniors but also reduces the spread to others. The document also highlights that seniors can book appointments through the government website.\n\nI need to make sure I include the key reasons: higher risk of severe illness, effectiveness of the vaccine, availability at no cost, timing for immunity, and protection for others. Also, mention the safety aspects like it being inactivated. Avoid any information not in the documents, like specific medical conditions unless they're in the files. Check if there's any other relevant info in other files, but since the user is asking about seniors, file 12a is the main one. \n\nNo contradictions found. The answer should be based on the points from 12a. Make sure to reference the document as per the instructions.\n</think>\n\nSeniors (aged 65 years and older) should get the inactivated influenza (flu) vaccine because they are at **much higher risk of severe disease, complications, and even death from influenza** compared to younger adults. The vaccine is a **safe and effective way to reduce these risks** and prevent hospitalizations or life-threatening outcomes. \n\nKey reasons include:  \n1. **Reduced Severity of Illness**: Influenza can lead to complications like bacterial pneumonia, worsen chronic conditions (e.g., heart or lung diseases), and weaken the body’s ability to fight other infections.  \n2. **Protection for Others**: Vaccination helps prevent the spread of the virus to vulnerable individuals, such as young children, pregnant people, or those with weakened immune systems.  \n3. **Safety and Efficacy**: The inactivated vaccine contains killed viruses and cannot cause influenza. Common side effects are mild (e.g., soreness at the injection site, low-grade fever).  \n4. **Free Access**: In British Columbia, the vaccine is available at no cost to seniors.  \n\nThe vaccine is recommended annually, ideally **before the flu season begins (October)**, to allow time for immunity to develop. For more details, refer to [HealthLinkBC File #12a](https://www.healthlinkbc.ca/node/11380).  \n\nIf you have specific concerns or contraindications (e.g., history of severe allergic reactions to vaccines), consult a healthcare provider or call 811 for guidance.",
+          "sources": [
+            "12e_Live_attenuated_influenza_flu_vaccine_2025-09.md",
+            "12a_Why_seniors_should_get_the_inactivated_influenza_flu_vaccine_2025-09.md",
+            "12a_Why_seniors_should_get_the_inactivated_influenza_flu_vaccine_2025-09.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 10,
+              "reason": "The response is fully grounded in the retrieved document, citing specific details like higher risk for seniors, vaccine safety, and free access in BC."
+            },
+            "completeness": {
+              "score": 10,
+              "reason": "The answer addresses all key reasons for seniors to get the flu vaccine, including risk reduction, protection for others, safety, and accessibility."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "The question is non-emergency, and the response appropriately avoids advising 911 while providing preventive care guidance."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is in English, matching the user's question and the language of the retrieved document."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "The response gives accurate triage advice, including annual vaccination timing, consulting a provider for contraindications, and referencing HealthLinkBC File #12a."
+            },
+            "overall": 10.0
+          }
+        },
+        "zh": {
+          "query": "为什么老年人应该接种流感疫苗？",
+          "answer": "<think>\n好的，用户问为什么老年人应该接种流感疫苗。我需要根据提供的政策文件来回答这个问题。首先，查看文件12a，里面明确提到老年人（65岁及以上）应该每年接种灭活流感疫苗，因为他们感染流感后出现严重疾病和并发症的风险更高。文件中还指出，疫苗是安全有效的，可以帮助保持健康，预防疾病甚至挽救生命。\n\n接下来，我需要确认是否有其他相关文件补充信息。比如文件12d可能详细说明了高风险人群，但用户的问题主要针对老年人，所以文件12a已经足够。此外，文件中提到疫苗在10月左右开始供应，建议尽早接种以在流感季节前建立免疫力，这点也需要包含在回答中。\n\n还要注意是否有禁忌症或注意事项，但用户的问题主要是“为什么应该接种”，所以重点放在益处和必要性上。需要提到疫苗的免费提供以及如何预约，但用户可能更关心原因，所以这部分可以简要提及。\n\n最后，确保回答符合规则：用中文，基于文件内容，不添加额外信息。如果有不确定的地方，建议用户拨打811，但这里的问题可以直接用文件中的信息回答。确认没有紧急情况，所以不需要建议拨打911。\n</think>\n\n老年人（65岁及以上）应每年接种灭活流感疫苗，因为随着年龄增长，他们感染流感后发展为严重疾病和并发症的风险显著增加。根据[HealthLinkBC文件12a](https://www.healthlinkbc.ca/node/11381)，流感疫苗是安全有效的，能帮助身体建立免疫力，预防流感感染并降低住院或死亡风险。疫苗通过刺激免疫系统产生针对流感病毒的抗体，通常在接种后两周起效，并在流感季节（通常持续至次年4月）提供保护。\n\n**依据文件内容补充说明：**\n1. **高风险人群**：老年人因免疫力下降，属于流感高危人群，疫苗可显著减少重症和死亡风险。\n2. **疫苗安全性**：灭活流感疫苗不含活病毒，仅含灭活病毒成分，无法引发流感，常见反应为接种部位红肿或轻微发热（症状持续1-2天）。\n3. **接种时机**：建议在流感季节开始前（通常10月起）尽早接种，以留出足够时间产生抗体。\n4. **免费接种**：在不列颠哥伦比亚省，老年人可免费接种流感疫苗，具体预约信息可通过[省政府网站](https://www2.gov.bc.ca/gov/content/health/managing-your-health/immunizations/flu)查询。\n\n如存在禁忌症（如对疫苗成分有严重过敏史），请咨询医疗专业人员。若出现呼吸困难等紧急情况，请立即拨打911。",
+          "sources": [
+            "12e_Live_attenuated_influenza_flu_vaccine_2025-09.md",
+            "18a_Tetanus_and_diphtheria_Td_vaccine_2023-02.md",
+            "12a_Why_seniors_should_get_the_inactivated_influenza_flu_vaccine_2025-09.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 10,
+              "reason": "The response directly references the retrieved document's key points about seniors' high risk and vaccine benefits."
+            },
+            "completeness": {
+              "score": 9,
+              "reason": "Covers core reasons (high risk, vaccine safety, timing) but omits specific high-risk groups mentioned in the document (e.g., household contacts of high-risk individuals)."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "No emergency was present in the question, so no 911 advice was needed."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is in Chinese, matching the user's question language."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "Provides accurate guidance on vaccination for seniors and includes appropriate follow-up steps (e.g., consulting healthcare providers)."
+            },
+            "overall": 9.8
+          }
+        },
+        "fr": {
+          "query": "Pourquoi les personnes âgées devraient-elles se faire vacciner contre la grippe?",
+          "answer": "<think>\nOkay, the user is asking why seniors should get the inactivated influenza vaccine. Let me check the policy documents provided.\n\nFirst, looking at file 12a, it mentions that seniors aged 65 and older are at higher risk for severe disease and complications from the flu. The vaccine is recommended annually because it's safe and effective. It also states that the vaccine is free and available through BC's government website. The inactivated vaccine uses killed viruses, so it can't cause the flu. Common side effects are mild, like soreness at the injection site, and maybe fever or fatigue for a day or two. \n\nThe answer should highlight the increased risk for seniors, the safety and effectiveness of the vaccine, the availability at no cost, and the timing for getting vaccinated before flu season. Also, mention who shouldn't get it, but since the user didn't ask about contraindications, maybe just stick to the main reasons. Need to make sure to reference the policy documents, like File 12a, and provide the link for booking. Also, note that if they have severe reactions or specific medical conditions, they should consult a healthcare provider. \n\nWait, the user is asking in French, but the answer needs to be in French as per the rules. However, the user's question is in French, but the system's response should be in the same language as the user's question. Wait, the user's question is in French, so I need to respond in French. But the policy documents are in English. Let me make sure I translate the key points correctly. \n\nThe user's question is \"Pourquoi les personnes âgées devraient-elles se faire vacciner contre la grippe?\" which translates to \"Why should seniors get vaccinated against the flu?\" \n\nSo the answer should include the main points from 12a: higher risk of severe illness, vaccine is free, available from October, builds immunity in two weeks, common side effects are mild. Also, mention that it's inactivated (can't give the flu), and that it helps prevent spreading to others. \n\nNeed to structure the answer clearly, using the policy documents as the basis. Also, check if there's any other relevant info in other files. For example, 12e talks about live attenuated vaccine but it's not recommended for seniors. So stick to 12a for this question. \n\nMake sure to include the link for booking appointments. Also, note that if they have had a severe reaction before, they shouldn't get it. But the user didn't ask about contraindications, so maybe just focus on the main reasons. \n\nSo the answer in French should state that seniors are at higher risk, the vaccine is free and effective, available from October, and that it's safe with mild side effects. Also, mention that it helps protect others. Cite the policy document 12a as the basis.\n</think>\n\nLes personnes âgées de 65 ans et plus devraient se faire vacciner contre la grippe car elles sont à risque accru de complications graves, comme les infections pulmonaires ou la pneumonie, en cas d'infection à la grippe. Le vaccin antigrippal inactivé est **sécuritaire et efficace** pour prévenir la maladie et réduire le risque de complications. Il est offert gratuitement en Colombie-Britannique et disponible à partir d’octobre, idéalement administré avant le début de la saison de la grippe (qui se termine généralement en avril).  \n\nLe vaccin contient des virus grippaux inactivés (non vivants), donc il ne peut pas provoquer la grippe. Les effets secondaires courants sont légers (rougeur, douleur ou gonflement au point d’injection, fièvre, maux de tête, fatigue) et durent 1 à 2 jours. En se vaccinant, les personnes âgées protègent également leur entourage en réduisant la transmission du virus.  \n\nPour plus d’informations ou pour prendre rendez-vous, consultez le site gouvernemental : [www2.gov.bc.ca/gov/content/health/managing-your-health/immunizations/flu](https://www2.gov.bc.ca/gov/content/health/managing-your-health/immunizations/flu).  \n\n**Source :** [HealthLinkBC File #12a](https://www.healthlinkbc.ca/node/11634) (mis à jour le 25 septembre 2025).  \n\nSi vous présentez une réaction grave après le vaccin (ex. : réaction anaphylactique), composez immédiatement **911**. Pour des questions non urgentes, contactez le **811**.",
+          "sources": [
+            "12a_Why_seniors_should_get_the_inactivated_influenza_flu_vaccine_2025-09.md",
+            "12e_Live_attenuated_influenza_flu_vaccine_2025-09.md",
+            "12a_Why_seniors_should_get_the_inactivated_influenza_flu_vaccine_2025-09.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 10,
+              "reason": "The response is fully grounded in the retrieved document (File 12a) and accurately reflects its content."
+            },
+            "completeness": {
+              "score": 10,
+              "reason": "The answer addresses all key points from the document: risk for seniors, vaccine safety, availability, side effects, and community protection."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "The response includes correct emergency guidance (911 for severe reactions) and non-urgent triage (811)."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is provided in French, matching the user's question language."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "The guidance is appropriate for seniors, including vaccine recommendations, timing, and resource links."
+            },
+            "overall": 10.0
+          }
+        },
+        "id": {
+          "query": "Mengapa lansia harus mendapatkan vaksin flu?",
+          "answer": "<think>\nOkay, the user is asking why seniors should get the inactivated influenza vaccine. Let me check the provided policy documents.\n\nLooking at the file 12a, it mentions that seniors aged 65 and older are at higher risk for severe disease and complications from influenza. The inactivated vaccine is recommended because it's safe and effective. It also states that the vaccine is available for free and helps prevent illness and save lives. The document explains that the vaccine contains killed viruses, so it can't cause the flu. Common reactions are mild, like soreness at the injection site. Also, getting vaccinated before the flu season starts, usually in October, is important for building immunity. \n\nI need to make sure the answer includes the key points: higher risk for seniors, vaccine safety, effectiveness, availability, and timing. Also, mention the prevention of complications and the importance of getting it annually. Avoid any information not in the documents. The user might be a senior or a caregiver looking for reasons to get vaccinated. Need to present the answer clearly in Indonesian, based strictly on the provided files.\n</think>\n\nLansia (usia 65 tahun ke atas) disarankan mendapatkan vaksin flu inaktif karena risiko mereka yang lebih tinggi mengalami penyakit parah dan komplikasi dari influenza. Vaksin ini aman dan efektif untuk mencegah penyakit serta mengurangi risiko komplikasi seperti pneumonia bakteri, yang umum terjadi pada orang tua. Vaksin flu inaktif mengandung virus influenza yang sudah dimatikan, sehingga tidak dapat menyebabkan flu. \n\nBeberapa alasan utama:  \n1. **Perlindungan terhadap komplikasi**: Influenza dapat melemahkan sistem kekebalan tubuh, meningkatkan risiko infeksi lain, terutama pada lansia dengan kondisi kesehatan seperti jantung atau paru-paru.  \n2. **Keamanan vaksin**: Reaksi umum seperti kemerahan, nyeri, atau bengkak di area suntikan biasanya ringan.  \n3. **Waktu optimal**: Disarankan mendapatkan vaksin sebelum musim flu dimulai (biasanya tersedia mulai Oktober) untuk membangun kekebalan sebelum virus menyebar.  \n4. **Gratis dan mudah diakses**: Vaksin tersedia tanpa biaya di British Columbia, dengan informasi pemesanan dapat ditemukan di [situs pemerintah B.C.](https://www2.gov.bc.ca/gov/content/health/managing-your-health/immunizations/flu).  \n\nUntuk detail lebih lanjut, kunjungi [HealthLinkBC File #12a](https://www.healthlinkbc.ca/node/11380).  \n\n*Berdasarkan dokumen kebijakan HealthLinkBC File #12a (September 2025).*",
+          "sources": [
+            "12e_Live_attenuated_influenza_flu_vaccine_2025-09.md",
+            "12a_Why_seniors_should_get_the_inactivated_influenza_flu_vaccine_2025-09.md",
+            "12a_Why_seniors_should_get_the_inactivated_influenza_flu_vaccine_2025-09.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 9,
+              "reason": "The response accurately reflects the document's emphasis on seniors' higher risk and vaccine safety."
+            },
+            "completeness": {
+              "score": 9,
+              "reason": "Covers key reasons (risk reduction, safety, availability) but could explicitly mention annual vaccination timing from the document."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "No emergency context in the question; response appropriately avoids 911 advice."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is correctly provided in Indonesian, matching the user's question."
+            },
+            "triage_accuracy": {
+              "score": 9,
+              "reason": "Provides accurate guidance on vaccine type and benefits, though 811 referral isn't required here."
+            },
+            "overall": 9.4
+          }
+        }
+      }
+    },
+    {
+      "scenario": "Out of scope - dental",
+      "languages": {
+        "en": {
+          "query": "I have a bad toothache, should I go to emergency?",
+          "answer": "<think>\nOkay, the user is asking if they should go to the emergency room for a bad toothache. Let me check the policy documents provided.\n\nFirst, the rules say that in case of an emergency like chest pain or severe bleeding, they should call 911. But a toothache isn't listed there. The dental care document mentions that for teething discomfort, they can use a teething ring, but that's for infants. For older children and adults, the documents talk about fluoride and dental visits. \n\nThe user's question is about a bad toothache, which is an adult issue. The policy documents don't specifically address adult dental emergencies. The only emergency advice in the documents is for teething babies. Since there's no info on adult toothaches, the rules say to advise calling 811 if I can't determine the course of action. \n\nSo, since the provided documents don't cover adult dental emergencies, I should tell the user to call 811 for consultation. Also, if they have severe symptoms like difficulty breathing, then 911 is needed, but the question is just about a toothache. Therefore, the answer is to call 811.\n</think>\n\nIf you are experiencing a severe toothache, it is not classified as an emergency requiring immediate 911 assistance unless accompanied by symptoms such as difficulty breathing, severe bleeding, or swelling that affects your airway. However, the provided policy documents do not include specific guidance for adult dental emergencies. \n\n**Recommendation:**  \nFor advice tailored to your situation, please call **811** to speak with a registered nurse or healthcare professional. They can assess your symptoms and determine if urgent dental care is required. \n\n*Basis:* Rules specify advising users to call 811 when policy documents do not cover the issue.",
+          "sources": [
+            "19_Dental_care_for_your_infant_and_toddler_2025-12.md",
+            "19_Dental_care_for_your_infant_and_toddler_2025-12.md",
+            "28_Water_fluoridation_facts_2025-12.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 10,
+              "reason": "The response correctly states that the policy documents do not cover adult dental emergencies, aligning with the provided rules."
+            },
+            "completeness": {
+              "score": 8,
+              "reason": "The answer addresses the core question but could have explicitly mentioned calling 911 for life-threatening symptoms (e.g., airway compromise) to be fully comprehensive."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "The response correctly identifies that a toothache alone is not an emergency requiring 911, as per the documents."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is in English, matching the user's question language."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "The guidance to call 811 is appropriate for out-of-scope issues, as specified in the rules."
+            },
+            "overall": 9.6
+          }
+        },
+        "zh": {
+          "query": "我牙很痛，我应该去急诊吗？",
+          "answer": "<think>\n好的，用户问的是“我牙很痛，我应该去急诊吗？”，我需要根据提供的政策文件来回答。首先，用户的问题是关于牙痛是否需要去急诊，所以我要先检查政策文件中是否有相关指导。\n\n查看提供的文件，主要是关于儿童和婴儿的牙科护理、氟化物的作用以及水氟化的事实。比如，文件中提到氟化物帮助预防蛀牙，定期看牙医的时间，以及如何护理婴儿的牙齿。但并没有直接提到牙痛的处理，尤其是成人的情况。\n\n接下来，我需要确定是否有任何紧急情况的指导。政策文件中没有提到牙痛属于紧急情况，但规则里明确说明，如果遇到紧急情况如胸痛、呼吸困难、严重出血，应立即拨打911。而牙痛虽然痛苦，但可能不属于这些紧急情况，除非伴随其他严重症状。\n\n根据规则，如果无法确定是否应该去急诊，应该建议用户拨打811咨询。因此，这里需要判断牙痛是否属于需要立即处理的紧急情况。由于政策文件中没有明确说明牙痛需要急诊，所以应该建议用户联系811获取进一步指导，或者尽快预约牙医。\n\n另外，用户可能需要知道在等待期间如何缓解疼痛，但政策文件中没有提供这方面的信息，所以不能自行建议，只能引导他们联系专业医疗人员。因此，正确的做法是建议用户拨打811或尽快看牙医，而不是自行决定去急诊。\n</think>\n\n根据您描述的牙痛情况，政策文件中未明确将其列为需要立即拨打911的紧急情况（如胸痛、呼吸困难、严重出血等）。然而，剧烈牙痛可能由严重口腔感染或其他需及时处理的问题引起。建议您：\n\n1. **尽快联系牙医**：牙痛可能需要专业牙科治疗（如开药、根管治疗等）。  \n2. **若无法立即就诊**：可拨打 **811** 咨询注册护士或医疗专业人士，获取临时缓解建议及是否需要急诊的判断。  \n3. **注意紧急情况**：如果伴随以下症状，请立即拨打 **911**：  \n   - 面部或牙龈严重肿胀（可能影响呼吸）  \n   - 高烧不退  \n   - 无法吞咽或开口说话  \n\n政策文件中强调，氟化物使用、日常口腔护理及定期牙科检查是预防牙痛的关键措施（参考《Dental care for your infant and toddler》及《Water fluoridation facts》）。  \n\n请根据实际情况选择最合适的医疗途径。",
+          "sources": [
+            "19_Dental_care_for_your_infant_and_toddler_2025-12.md",
+            "28_Water_fluoridation_facts_2025-12.md",
+            "19_Dental_care_for_your_infant_and_toddler_2025-12.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 6,
+              "reason": "The response acknowledges the document lacks emergency protocols but follows general triage rules."
+            },
+            "completeness": {
+              "score": 6,
+              "reason": "Provides guidance on contacting 811 but misses specific dental care steps from the document."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "Correctly identifies tooth pain as non-emergency per document and avoids 911 unless symptoms escalate."
+            },
+            "language_appropriateness": {
+              "score": 2,
+              "reason": "User's question is in Chinese, but response is in English, violating language consistency."
+            },
+            "triage_accuracy": {
+              "score": 8,
+              "reason": "Accurately directs to 811 for non-emergency dental pain as per policy."
+            },
+            "overall": 6.4
+          }
+        },
+        "fr": {
+          "query": "J'ai une forte douleur aux dents, dois-je aller aux urgences?",
+          "answer": "<think>\nOkay, the user is asking in French whether they should go to the emergency room for a severe toothache. Let me check the provided policy documents to see what's recommended.\n\nLooking at the first document about pregnancy and oral health, it says if you have pain, swelling, or infection, seek treatment right away. But it doesn't specifically mention going to the ER. The second document on water fluoridation isn't relevant here. The third document about dental care for infants and toddlers also doesn't address emergencies.\n\nNone of the documents explicitly state when to go to the ER for dental pain. They recommend seeing a dentist or contacting health services. Since the user is asking about emergencies, I need to recall the rules. The rules say if it's an emergency like severe pain, they should call 911. But wait, the policy documents don't mention ER for dental pain specifically. However, the rules also say if unsure, advise to call 811. \n\nWait, the user's question is about strong tooth pain. The documents don't specify ER, but the rules say in case of emergency, advise 911. Is severe tooth pain considered an emergency? The examples given in the rules are chest pain, difficulty breathing, severe bleeding. Dental pain might not be in those examples, but if it's severe and causing distress, maybe it's considered an emergency. However, the policy documents don't state that. Since the documents don't specify ER for dental pain, according to the rules, if I can't determine from the documents, I should tell them to call 811. But the rules also say if it's an emergency, advise 911. \n\nHmm. The user's situation is severe tooth pain. The documents don't list dental pain as an emergency, so maybe it's not an emergency. Therefore, the correct action is to advise calling 811 for consultation. Also, the pregnancy document says to seek treatment right away, but that could be a dentist, not necessarily ER. So the answer should be to call 811 unless it's a life-threatening emergency, which isn't specified here. So the answer is to call 811.\n</think>\n\nSi vous avez une forte douleur dentaire, il est recommandé de consulter un professionnel de santé dentaire dès que possible. Cependant, si la douleur est extrême, accompagnée de symptômes tels que une infection grave, une difficulté à respirer ou une fièvre élevée, composez immédiatement **911** pour un avis d'urgence. Dans les autres cas, contactez le **811** pour obtenir des conseils et déterminer le meilleur cours d'action. \n\n**Base de la recommandation** : Selon le document « Grossesse et santé bucco-dentaire », une douleur, une infection ou une inflammation doivent être traitées rapidement, mais les directives ne précisent pas l'urgence absolue sauf pour des complications graves. Pour des cas non urgents ou incertains, le 811 est le point de contact recommandé.",
+          "sources": [
+            "38b_Pregnancy_and_oral_health_2025-12.md",
+            "28_Water_fluoridation_facts_2025-12.md",
+            "19_Dental_care_for_your_infant_and_toddler_2025-12.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 9,
+              "reason": "The response is grounded in the retrieved documents and rules, advising 811 for non-emergencies and 911 for life-threatening symptoms."
+            },
+            "completeness": {
+              "score": 10,
+              "reason": "The answer addresses both urgent and non-urgent scenarios, providing clear guidance for the user's question."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "The response correctly identifies life-threatening symptoms (e.g., infection, difficulty breathing) as requiring 911, aligning with triage rules."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is provided in French, matching the user's question language."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "The guidance aligns with the documents (seek treatment for pain/infection) and rules (811 for non-emergencies)."
+            },
+            "overall": 9.8
+          }
+        },
+        "id": {
+          "query": "Gigi saya sangat sakit, apakah saya harus pergi ke UGD?",
+          "answer": "<think>\nOkay, the user is asking, \"Gigi saya sangat sakit, apakah saya harus pergi ke UGD?\" which translates to \"My tooth is very painful, should I go to the emergency room?\" \n\nFirst, I need to check the provided policy documents to see if there's any guidance on dental pain and emergency situations. Let me go through each document.\n\nLooking at the first document about water fluoridation, it talks about the benefits of fluoride and safety, but not about emergency care. The second document is about dental care for infants and toddlers, mentioning teething and prevention, but again, not about emergencies. The third document is about pregnancy and oral health, discussing safe dental practices during pregnancy but not emergency situations.\n\nNone of the policy documents directly address what to do in case of severe tooth pain. The rules state that if I can't determine the appropriate action, I should advise the user to call 811. Also, there's an immediate rule to call 911 for emergencies like chest pain, difficulty breathing, etc. However, severe tooth pain isn't listed as an emergency in the rules, but it's a valid reason to seek medical attention.\n\nSince the documents don't provide specific guidance on this, I should follow the rule of advising to call 811 for consultation. The user might need immediate care, but unless there are other emergency symptoms, UGD (emergency room) might not be the first recommendation. However, in some cases, severe pain could indicate an infection that needs urgent treatment. But without explicit guidance in the policies, the safest answer is to recommend calling 811.\n</think>\n\nSakit gigi yang parah bukan termasuk darurat medis yang memerlukan pemanggilan 911 sesuai kebijakan. Namun, karena dokumen kebijakan tidak memberikan panduan spesifik tentang tindakan untuk nyeri gigi, disarankan untuk segera menghubungi **811** (layanan konsultasi kesehatan British Columbia) untuk mendapatkan saran lebih lanjut. Mereka dapat mengevaluasi keparahan kondisi Anda dan menentukan apakah Anda perlu ke UGD, klinik gigi, atau bisa ditangani dengan perawatan lain. \n\n**Dasar rekomendasi**: Kebijakan menyebutkan bahwa jika tidak dapat menentukan tindakan yang tepat, pengguna harus diarahkan untuk menelepon 811.",
+          "sources": [
+            "28_Water_fluoridation_facts_2025-12.md",
+            "19_Dental_care_for_your_infant_and_toddler_2025-12.md",
+            "38b_Pregnancy_and_oral_health_2025-12.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 10,
+              "reason": "The answer correctly follows the policy to call 811 when documents lack specific guidance on dental emergencies."
+            },
+            "completeness": {
+              "score": 10,
+              "reason": "The response fully addresses the user's question by providing actionable next steps based on policy rules."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "The answer correctly avoids advising 911 since severe tooth pain is not classified as an emergency in the provided rules."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is written in Indonesian, matching the user's language in the question."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "The guidance to call 811 aligns with the policy for out-of-scope scenarios and ensures appropriate follow-up."
+            },
+            "overall": 10.0
+          }
+        }
+      }
+    }
+  ],
+  "language_means": {
+    "en": {
+      "faithfulness": 9.6,
+      "completeness": 9.4,
+      "emergency_detection": 10.0,
+      "language_appropriateness": 10.0,
+      "triage_accuracy": 10.0,
+      "overall": 9.8
+    },
+    "zh": {
+      "faithfulness": 9.0,
+      "completeness": 8.0,
+      "emergency_detection": 10.0,
+      "language_appropriateness": 8.4,
+      "triage_accuracy": 9.4,
+      "overall": 8.96
+    },
+    "fr": {
+      "faithfulness": 9.6,
+      "completeness": 9.8,
+      "emergency_detection": 10.0,
+      "language_appropriateness": 10.0,
+      "triage_accuracy": 9.8,
+      "overall": 9.84
+    },
+    "id": {
+      "faithfulness": 9.0,
+      "completeness": 9.2,
+      "emergency_detection": 10.0,
+      "language_appropriateness": 10.0,
+      "triage_accuracy": 9.8,
+      "overall": 9.52
+    }
+  }
+}

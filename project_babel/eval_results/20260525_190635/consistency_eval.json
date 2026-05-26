@@ -1,0 +1,285 @@
+{
+  "metadata": {
+    "timestamp": "20260525_190635",
+    "model": "qwen/qwen3-32b",
+    "n_runs": 3,
+    "instability_threshold": 1.5,
+    "num_queries": 2
+  },
+  "results": {
+    "ID - out of scope mental health": {
+      "query": "Saya merasa sangat cemas dan depresi, di mana saya bisa mendapatkan bantuan?",
+      "runs": [
+        {
+          "run": 1,
+          "answer": "<think>\nOkay, the user is asking about where to get help for feeling very anxious and depressed. Let me check the provided policy documents to see if there's any relevant information.\n\nFirst, looking at the Rubella document—no, that's about treatment for rubella, so not relevant here. Next, the Quitting Smoking document. It talks about support networks, counseling, and medications for quitting smoking. There's mention of QuitNow and Talk Tobacco programs. While it's about smoking cessation, it does mention counseling and support services. Maybe the user could use the QuitNow resources for general mental health support? But the user isn't specifically talking about smoking. The third document is about emergency preparedness for seniors, which doesn't seem related either.\n\nSince none of the policy documents directly address anxiety and depression, I can't use them to provide specific recommendations. The rules state that if I can't determine the appropriate course of action based on the provided documents, I should advise the user to call 811. Also, since it's not an emergency (no mention of immediate danger), I shouldn't suggest 911. Therefore, the correct response is to recommend calling 811 for consultation.\n</think>\n\nSaya menyarankan Anda untuk segera menghubungi layanan konsultasi kesehatan British Columbia di nomor **811** untuk mendapatkan bantuan dan penilaian lebih lanjut. Mereka dapat memberikan saran terkait kesehatan mental, merujuk Anda ke layanan dukungan, atau menyarankan langkah-langkah yang sesuai dengan kebutuhan Anda. Jika Anda merasa dalam bahaya atau darurat, segera hubungi **911**. \n\nKebijakan yang tersedia tidak secara spesifik membahas penanganan kecemasan dan depresi, sehingga disarankan untuk berkonsultasi langsung dengan profesional kesehatan.",
+          "sources": [
+            "14d_Rubella_2021-11.md",
+            "30c_Quitting_smoking_2024-06.md",
+            "103a_Community_evacuation_information_for_seniors_2023-08.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 10,
+              "reason": "The response correctly advises calling 811 as the retrieved documents do not address mental health support directly, aligning with the policy for out-of-scope queries."
+            },
+            "completeness": {
+              "score": 10,
+              "reason": "The response fully addresses the user's question by providing a clear referral to 811 and emergency contact instructions."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "The response correctly identifies the situation as non-emergency and does not recommend 911, which is appropriate."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is provided in Indonesian, matching the user's question language."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "The response gives accurate guidance by directing the user to 811 for mental health support, as per the policy for non-emergency, out-of-scope queries."
+            },
+            "overall": 10.0
+          }
+        },
+        {
+          "run": 2,
+          "answer": "<think>\nOkay, the user is asking for help with feeling very anxious and depressed. Let me check the provided policy documents to see if there's any relevant information.\n\nLooking at the three files: Rubella, Quitting Smoking, and Community Evacuation for Seniors. None of these directly address mental health issues like anxiety and depression. The Rubella file talks about home treatment for symptoms, the Quitting Smoking file provides methods to stop smoking, and the Evacuation file is about emergency preparedness. \n\nSince none of the policy documents mention resources for mental health support, I can't provide specific recommendations based on the given files. The user needs guidance on where to seek help, but the available data doesn't cover that. According to the rules, if I can't determine the appropriate action, I should advise them to call 811. Also, since it's not an emergency (they didn't mention life-threatening symptoms), I shouldn't suggest 911. So the correct response is to recommend calling 811 for consultation.\n</think>\n\nBerdasarkan dokumen kebijakan yang tersedia, tidak ada informasi spesifik tentang penanganan kecemasan dan depresi dalam file yang diberikan. Untuk mendapatkan bantuan terkait kesehatan mental, disarankan untuk segera menghubungi **811** (layanan konsultasi kesehatan British Columbia) agar mendapatkan panduan lebih lanjut. Jika Anda mengalami situasi darurat (misalnya, bahaya bagi diri sendiri atau orang lain), segera hubungi **911**.",
+          "sources": [
+            "14d_Rubella_2021-11.md",
+            "30c_Quitting_smoking_2024-06.md",
+            "103a_Community_evacuation_information_for_seniors_2023-08.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 10,
+              "reason": "The response correctly identifies that the retrieved documents do not address mental health concerns and advises calling 811 as per policy."
+            },
+            "completeness": {
+              "score": 10,
+              "reason": "The response fully addresses the user's question by providing actionable guidance and clarifying emergency vs. non-emergency protocols."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "The response correctly distinguishes non-emergency mental health concerns and avoids recommending 911 unless explicitly needed."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is provided in Indonesian, matching the user's language preference."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "The response provides accurate triage guidance by directing the user to 811 for mental health support and 911 for emergencies."
+            },
+            "overall": 10
+          }
+        },
+        {
+          "run": 3,
+          "answer": "<think>\nOkay, the user is asking about where to get help for feeling very anxious and depressed. Let me check the provided policy documents to see if there's any relevant information.\n\nFirst, looking at the Rubella document—no, that's about treating rubella symptoms. The quitting smoking document mentions mental health a bit, like stress management techniques such as mindfulness and deep breathing, but it's focused on quitting smoking. The community evacuation document is about emergency preparedness, which doesn't relate here.\n\nNone of the provided documents directly address anxiety and depression support services. The quitting smoking document talks about counseling and support for quitting, but not for mental health issues. Since there's no specific information in the given policies about where to seek help for anxiety and depression, I need to follow the rules. The rules state that if I can't determine the appropriate course of action, I should advise the user to call 811. Also, since it's not an emergency (no mention of immediate danger), I shouldn't suggest 911. So the correct response is to recommend calling 811 for consultation.\n</think>\n\nBerdasarkan dokumen kebijakan yang tersedia, tidak ada informasi spesifik tentang layanan bantuan untuk kecemasan dan depresi. Namun, jika Anda memerlukan bantuan terkait kesehatan mental, disarankan untuk menghubungi **811** (layanan konsultasi kesehatan British Columbia) untuk mendapatkan panduan lebih lanjut. Jika Anda mengalami situasi darurat (misalnya, bahaya bagi diri sendiri atau orang lain), segera hubungi **911**.",
+          "sources": [
+            "14d_Rubella_2021-11.md",
+            "30c_Quitting_smoking_2024-06.md",
+            "103a_Community_evacuation_information_for_seniors_2023-08.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 3,
+              "reason": "The response relies on general knowledge (811/911) not present in the retrieved documents, which contain no mental health resources or crisis numbers."
+            },
+            "completeness": {
+              "score": 6,
+              "reason": "Partially addresses the question by suggesting 811/911 but lacks specific mental health services mentioned in the documents (none exist in the provided text)."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "Correctly distinguishes non-emergency (811) vs. emergency (911) guidance as required by BC protocols."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "Response is in Indonesian, matching the user's question language."
+            },
+            "triage_accuracy": {
+              "score": 8,
+              "reason": "Provides accurate provincial triage guidance for non-emergency mental health concerns despite document limitations."
+            },
+            "overall": 6.6
+          }
+        }
+      ]
+    },
+    "Well water safety": {
+      "query": "How do I test if my well water is safe to drink?",
+      "runs": [
+        {
+          "run": 1,
+          "answer": "<think>\nOkay, the user is asking how to test if their well water is safe to drink. Let me check the provided policy documents to find the relevant information.\n\nFirst, looking at the Arsenic in Drinking Water document (49c), it mentions that well owners are responsible for testing their water for arsenic. It suggests contacting local public health units or environmental health officers for testing processes in BC. Also, there's a mention of HealthLinkBC File #05b for well water testing. \n\nThen, the PFAS in Drinking Water document (49i) states that private well owners should test their water regularly. It recommends using certified laboratories with specific EPA methods like 533, 537.1, or 1633. They also advise contacting local public health units for more info.\n\nThe Wildfire Effects on Water Quality document (49f) talks about checking the water system's integrity after wildfires and looking for signs like changes in appearance, smell, or taste. It suggests flushing water lines and testing for bacteria and chemicals if there's any concern from wildfires.\n\nSo, putting this together, the user needs to test their well water. The general steps would be: contact local health authorities for guidance, use certified labs, and consider specific tests for contaminants like arsenic, PFAS, and others depending on potential risks (like after wildfires). Also, regular testing is emphasized, especially for private wells.\n\nI should make sure to mention the different contaminants they might test for, the need for certified labs, and the contact points like local public health units. Also, note that if they're in an area affected by wildfires, they should check for those specific issues. If they find contaminants, they should follow the treatment options outlined in the documents.\n</think>\n\nTo test if your well water is safe to drink, follow these steps based on the provided policy documents:\n\n1. **Contact Local Authorities**: Reach out to your **local public health unit** or **environmental health officer** in British Columbia for guidance on testing procedures and accredited laboratories. They can help identify potential contaminants specific to your area (e.g., arsenic, PFAS, or wildfire-related pollutants).  \n\n2. **Use Certified Laboratories**:  \n   - For **arsenic testing**, use a certified laboratory. For **PFAS testing**, use labs employing EPA methods such as **EPA Method 533, 537.1, or 1633**.  \n   - For general water quality checks (e.g., bacteria, chemicals), ensure labs meet provincial standards.  \n\n3. **Test for Specific Contaminants**:  \n   - **Arsenic**: Test regularly, as it has no odor or taste. If initial tests detect arsenic above guidelines, confirm with a second test and consider treatment (e.g., reverse osmosis, distillation).  \n   - **PFAS**: If concerned about PFAS (e.g., near industrial areas), test using EPA-certified methods.  \n   - **Wildfire Impact**: If your area experienced wildfires, check for changes in water appearance, smell, or taste, and test for bacteria/chemicals if power outages or infrastructure damage occurred.  \n\n4. **Review Testing Resources**:  \n   - Visit [HealthLinkBC File #05b: Well Water Testing](https://www.healthlinkbc.ca/node/11674) for private well testing guidance.  \n   - For arsenic-specific guidelines, refer to the [Ministry of Environment’s water quality guidelines](https://www2.gov.bc.ca/assets/gov/environment/air-land-water/water/waterquality/water-quality-guidelines/approved-wqgs/bc_env_arsenic_waterqualityguideline_overview.pdf).  \n\n5. **Act on Results**:  \n   - If contaminants exceed safe levels, use certified treatment devices (e.g., NSF/ANSI Standard 53 or 58 systems) or switch to an alternative water source.  \n   - For wildfire-related contamination, flush water lines and repair damaged infrastructure as needed.  \n\nIf unsure about testing procedures or results, contact your local environmental health officer for support. For emergencies (e.g., suspected poisoning), call **911** or **BC Drug and Poison Control (1-800-567-8911)**.",
+          "sources": [
+            "49f_Wildfire_Its_effects_on_drinking_water_quality_2024-01.md",
+            "49c_Arsenic_in_drinking_water_2025-07.md",
+            "49i_PFAS_in_drinking_water_2024-12.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 8,
+              "reason": "The response includes accurate information from the documents but adds specific EPA methods (533, 537.1, 1633) not explicitly mentioned in the retrieved text, which slightly deviates from the source material."
+            },
+            "completeness": {
+              "score": 10,
+              "reason": "The response thoroughly addresses testing for arsenic, PFAS, wildfire impacts, and provides actionable steps for well owners, covering all aspects of the question."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "The question is not an emergency, and the response appropriately avoids suggesting 911 but includes BC Drug and Poison Control for urgent cases."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is in English, matching the user's question and the retrieved documents."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "The guidance is accurate and actionable, including testing procedures, certified labs, and treatment options, with no unnecessary referrals."
+            },
+            "overall": 9.6
+          }
+        },
+        {
+          "run": 2,
+          "answer": "<think>\nOkay, the user is asking how to test if their well water is safe to drink. Let me check the provided policy documents to find the relevant information.\n\nFirst, looking at the Arsenic in Drinking Water document (49c), it mentions that well owners are responsible for testing their water for arsenic. It suggests contacting local public health units or environmental health officers for testing processes in BC. Also, there's a mention of HealthLinkBC File #05b for well water testing. \n\nThen, the PFAS in Drinking Water document (49i) states that private well owners should test their water regularly. It recommends using certified laboratories with specific EPA methods like 533, 537.1, or 1633. They also advise contacting local public health units for more info.\n\nThe Wildfire Effects on Water Quality document (49f) talks about checking the water system's integrity after wildfires and looking for signs like changes in appearance, smell, etc. It suggests flushing water lines and testing for bacteria and chemicals if there's any concern from wildfires.\n\nSo, putting this together, the user needs to test their well water regularly. They should contact local authorities for guidance, use certified labs, and consider specific tests for contaminants like arsenic and PFAS. Also, after events like wildfires, checking for physical damage and testing for bacteria and chemicals is important. The answer should include steps like contacting local health units, using certified labs, and mention specific tests and methods from the documents. Also, if they're unsure, they should call 811 as per the rules.\n</think>\n\nTo determine if your well water is safe to drink, follow these steps based on the provided policy documents:\n\n1. **Contact Local Authorities**: Reach out to your local public health unit or environmental health officer in British Columbia for guidance on testing procedures and laboratories. They can provide specific recommendations for your area.  \n   *(Source: [Arsenic in Drinking Water](49c), [PFAS in Drinking Water](49i))*\n\n2. **Test for Contaminants**:  \n   - **Arsenic**: Test your well water for arsenic, as it has no odor or taste. If initial tests detect arsenic, confirm with a second test.  \n     *(Source: [Arsenic in Drinking Water](49c))*\n   - **PFAS**: If concerned about PFAS (per- and polyfluoroalkyl substances), use a certified laboratory employing EPA methods (e.g., EPA 533, 537.1, or 1633).  \n     *(Source: [PFAS in Drinking Water](49i))*\n   - **Wildfire Impact**: After wildfires, check for physical damage to your well system (e.g., power outages, structural damage) and test for bacteria, chemicals, and turbidity.  \n     *(Source: [Wildfire Effects on Water Quality](49f))*\n\n3. **Use Certified Laboratories**: Ensure testing is done by certified labs to guarantee accuracy. For private wells, regular testing is the owner’s responsibility.  \n   *(Source: [PFAS in Drinking Water](49i), [Arsenic in Drinking Water](49c))*\n\n4. **Review Results and Take Action**:  \n   - If contaminants like arsenic or PFAS exceed guidelines, use certified treatment devices (e.g., reverse osmosis, activated carbon filters) or switch to an alternative water source.  \n   - After wildfires, flush water lines and repair damaged infrastructure if needed.  \n   *(Sources: [Arsenic in Drinking Water](49c), [PFAS in Drinking Water](49i), [Wildfire Effects on Water Quality](49f))*\n\nFor further assistance, contact your local environmental health officer or visit [HealthLinkBC File #05b](https://www.healthlinkbc.ca/node/11674) for well water testing details. If unsure about next steps, call **811** for consultation.",
+          "sources": [
+            "49f_Wildfire_Its_effects_on_drinking_water_quality_2024-01.md",
+            "49c_Arsenic_in_drinking_water_2025-07.md",
+            "49i_PFAS_in_drinking_water_2024-12.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 10,
+              "reason": "The answer is fully grounded in the retrieved documents, including testing for arsenic, PFAS, and wildfire impacts."
+            },
+            "completeness": {
+              "score": 10,
+              "reason": "The response addresses all aspects of well water testing: arsenic, PFAS, wildfire effects, and next steps for contamination."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "The question is not an emergency, and the response correctly avoids advising 911 while suggesting 811 for consultation."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is in English, matching the user's question and document language."
+            },
+            "triage_accuracy": {
+              "score": 10,
+              "reason": "The guidance is accurate: testing via certified labs, contacting local health units, and using HealthLinkBC resources."
+            },
+            "overall": 10.0
+          }
+        },
+        {
+          "run": 3,
+          "answer": "<think>\nOkay, the user is asking how to test if their well water is safe to drink. Let me look through the provided policy documents to find the relevant information.\n\nFirst, I remember that there are different files about testing for specific contaminants. The user mentioned well water, so I should focus on the sections related to private wells.\n\nLooking at the file about arsenic (49c), it says that well owners are responsible for testing their water. It mentions contacting local public health units or environmental health officers for testing information. Also, there's a link to HealthLinkBC File #05b about well water testing. That's a good starting point.\n\nThen, the PFAS file (49i) also talks about private well owners needing to test regularly. It suggests using certified laboratories with specific EPA methods like 533, 537.1, or 1633. They also recommend contacting local health authorities for more details in BC.\n\nThe wildfire file (49f) discusses checking water systems after wildfires but doesn't directly address testing methods. However, it does mention testing for bacteria and chemicals if there's contamination concern.\n\nSo, putting this together, the user needs to test their well water through certified labs using appropriate methods. They should contact local health authorities for guidance. Also, depending on specific contaminants they're concerned about (like arsenic or PFAS), there are specific testing methods and standards mentioned. The answer should include general steps for testing, mention specific contaminants if applicable, and provide resources like HealthLinkBC and the suggested EPA methods. Also, note the responsibility of the well owner to test regularly.\n</think>\n\nTo test if your well water is safe to drink, follow these steps based on the provided policy documents:\n\n1. **Testing Responsibility**: As a private well owner, it is your responsibility to test your water regularly for contaminants like arsenic, PFAS, bacteria, and chemicals (as outlined in the [Arsenic in Drinking Water](https://www.healthlinkbc.ca/node/11674) and [PFAS in Drinking Water](https://www.healthlinkbc.ca/node/11674) documents).\n\n2. **Testing Methods**:\n   - Use a **certified laboratory** that employs EPA-approved methods such as:\n     - **EPA Method 533**, **537.1**, or **1633** for PFAS testing.\n     - Standard bacterial and chemical tests for general safety (e.g., after wildfire events, as noted in the [Wildfire and Water Quality](https://www.healthlinkbc.ca/node/11674) document).\n   - For arsenic testing, ensure labs follow guidelines from Health Canada and British Columbia’s ambient water quality standards.\n\n3. **Contact Local Authorities**: Reach out to your **local public health unit** or **environmental health officer** in British Columbia for guidance on testing protocols and accredited labs.\n\n4. **Resources**:\n   - Visit [HealthLinkBC File #05b: Well Water Testing](https://www.healthlinkbc.ca/node/11674) for detailed instructions on sampling and testing.\n   - For PFAS-specific concerns, refer to Health Canada’s [Objective for Drinking Water Quality](https://www.canada.ca/en/health-canada/services/publications/healthy-living/objective-drinking-water-quality-per-polyfluoroalkyl-substances.html).\n\nIf test results show contaminants above safe levels (e.g., arsenic or PFAS), consult your local health authority for treatment options like certified reverse osmosis or activated carbon filters. For immediate concerns about water safety (e.g., after a wildfire or chemical spill), call **811** for advice or **911** in emergencies.",
+          "sources": [
+            "49f_Wildfire_Its_effects_on_drinking_water_quality_2024-01.md",
+            "49c_Arsenic_in_drinking_water_2025-07.md",
+            "49i_PFAS_in_drinking_water_2024-12.md"
+          ],
+          "scores": {
+            "faithfulness": {
+              "score": 7,
+              "reason": "The response includes accurate information from the documents but adds specific EPA methods (533, 537.1, 1633) not explicitly listed in the retrieved text, which may constitute minor hallucination."
+            },
+            "completeness": {
+              "score": 9,
+              "reason": "The response addresses testing responsibility, methods, local authority contact, and resources, but could better clarify that PFAS testing methods are not detailed in the original documents."
+            },
+            "emergency_detection": {
+              "score": 10,
+              "reason": "The question is not an emergency, and the response correctly avoids advising 911 while including 811 for non-emergent guidance."
+            },
+            "language_appropriateness": {
+              "score": 10,
+              "reason": "The response is in English, matching the user's question language."
+            },
+            "triage_accuracy": {
+              "score": 9,
+              "reason": "The guidance is appropriate, including testing protocols and referrals to local health units, though some method details exceed the source documents."
+            },
+            "overall": 9.0
+          }
+        }
+      ]
+    }
+  },
+  "summary": [
+    {
+      "label": "ID - out of scope mental health",
+      "query": "Saya merasa sangat cemas dan depresi, di mana saya bisa mendapatkan bantuan?",
+      "valid_runs": 3,
+      "faithfulness": {
+        "mean": 7.67,
+        "std": 4.04,
+        "unstable": true
+      },
+      "completeness": {
+        "mean": 8.67,
+        "std": 2.31,
+        "unstable": true
+      },
+      "emergency_detection": {
+        "mean": 10,
+        "std": 0.0,
+        "unstable": false
+      },
+      "language_appropriateness": {
+        "mean": 10,
+        "std": 0.0,
+        "unstable": false
+      },
+      "triage_accuracy": {
+        "mean": 9.33,
+        "std": 1.15,
+        "unstable": false
+      },
+      "overall": {
+        "mean": 8.87,
+        "std": 1.96,
+        "unstable": true
+      }
+    },
+    {
+      "label": "Well water safety",
+      "query": "How do I test if my well water is safe to drink?",
+      "valid_runs": 3,
+      "faithfulness": {
+        "mean": 8.33,
+        "std": 1.53,
+        "unstable": true
+      },
+      "completeness": {
+        "mean": 9.67,
+        "std": 0.58,
+        "unstable": false
+      },
+      "emergency_detection": {
+        "mean": 10,
+        "std": 0.0,
+        "unstable": false
+      },
+      "language_appropriateness": {
+        "mean": 10,
+        "std": 0.0,
+        "unstable": false
+      },
+      "triage_accuracy": {
+        "mean": 9.67,
+        "std": 0.58,
+        "unstable": false
+      },
+      "overall": {
+        "mean": 9.53,
+        "std": 0.5,
+        "unstable": false
+      }
+    }
+  ]
+}
