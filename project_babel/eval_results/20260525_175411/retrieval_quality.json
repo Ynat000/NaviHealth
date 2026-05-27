@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "timestamp": "20260525_175411",
+    "top_k": 3,
+    "num_queries": 10,
+    "num_documents": 253
+  },
+  "results": [
+    {
+      "query": "What are the symptoms of measles and how does it spread?",
+      "expected_doc": "14b_Measles_2023-12.md",
+      "retrieved_docs": [
+        "14b_Measles_2023-12.md",
+        "25b_Hepatitis_B_immune_globulin_2024-10.md",
+        "129_Mpox_vaccine_2025-05.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "What are the signs of a concussion?",
+      "expected_doc": "122_Concussion_2024-10.md",
+      "retrieved_docs": [
+        "14c_Mumps_2022-08.md",
+        "35_Heat-related_illness_2025-07.md",
+        "50g_Grade_9_immunizations_in_B.C._2023-06.md"
+      ],
+      "hit": false,
+      "rank": null,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "query": "I found a tick on my skin, what should I do?",
+      "expected_doc": "01_Tick_bites_and_disease_2024-06.md",
+      "retrieved_docs": [
+        "01_Tick_bites_and_disease_2024-06.md",
+        "24_Health_risks_in_the_wilderness_2023-07.md",
+        "01_Tick_bites_and_disease_2024-06.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "My child has head lice, how do I treat it?",
+      "expected_doc": "06_Head_lice_2024-09.md",
+      "retrieved_docs": [
+        "06_Head_lice_2024-09.md",
+        "06_Head_lice_2024-09.md",
+        "50h_Numbing_creams_and_patches_for_immunizations_2026-01.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "What are the symptoms of E. coli infection?",
+      "expected_doc": "02_E._coli_infection_2022-02.md",
+      "retrieved_docs": [
+        "41j_Typhoid_vaccine_2025-07.md",
+        "77_Yersiniosis_2022-03.md",
+        "02_E._coli_infection_2022-02.md"
+      ],
+      "hit": true,
+      "rank": 3,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "query": "Why should seniors get the flu vaccine?",
+      "expected_doc": "12a_Why_seniors_should_get_the_inactivated_influenza_flu_vaccine_2025-09.md",
+      "retrieved_docs": [
+        "12e_Live_attenuated_influenza_flu_vaccine_2025-09.md",
+        "12a_Why_seniors_should_get_the_inactivated_influenza_flu_vaccine_2025-09.md",
+        "12a_Why_seniors_should_get_the_inactivated_influenza_flu_vaccine_2025-09.md"
+      ],
+      "hit": true,
+      "rank": 2,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "query": "Who should get the hepatitis B vaccine?",
+      "expected_doc": "25a_Hepatitis_B_vaccine_2025-05.md",
+      "retrieved_docs": [
+        "41c_Travel_immunizations_for_adults_2025-03.md",
+        "25b_Hepatitis_B_immune_globulin_2024-10.md",
+        "40d_Living_well_with_hepatitis_B_virus_infection_2024-10.md"
+      ],
+      "hit": false,
+      "rank": null,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "query": "What is a febrile seizure and what should I do?",
+      "expected_doc": "112_Febrile_seizures_fever_seizures_2025-08.md",
+      "retrieved_docs": [
+        "112_Febrile_seizures_fever_seizures_2025-08.md",
+        "50b_The_benefits_of_immunizing_your_child_2025-11.md",
+        "112_Febrile_seizures_fever_seizures_2025-08.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "How is scabies treated?",
+      "expected_doc": "09_Scabies_2024-08.md",
+      "retrieved_docs": [
+        "09_Scabies_2024-08.md",
+        "08i_Molluscum_contagiosum_2025-05.md",
+        "130c_Poison_hemlock_Conium_maculatum_2025-10.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "What are the symptoms of rabies and when should I get vaccinated?",
+      "expected_doc": "07a_Rabies_2025-12.md",
+      "retrieved_docs": [
+        "07b_Rabies_immune_globulin_and_vaccine_2018-09.md",
+        "14b_Measles_2023-12.md",
+        "41i_Yellow_fever_vaccine_2025-07.md"
+      ],
+      "hit": false,
+      "rank": null,
+      "reciprocal_rank": 0.0
+    }
+  ],
+  "summary": {
+    "hit_rate": 0.7,
+    "hit_count": 7,
+    "mrr": 0.5833
+  }
+}

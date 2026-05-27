@@ -1,0 +1,15 @@
+# Use this if requirements.txt does not work - this is more flexible in versioning
+
+# Core
+tokenizers==0.19.1
+numpy
+torch --index-url https://download.pytorch.org/whl/cpu
+sentence-transformers
+
+# LlamaIndex
+llama-index-core
+llama-index-embeddings-huggingface
+llama-index-llms-groq
+
+# Dev
+black
